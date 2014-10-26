@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='../fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='../fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src='../jquery/jquery-1.9.1.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js'></script>
+<script src='../fullcalendar/fullcalendar.min.js'></script>
+<script src='web-storage-objects.js'></script>
+<style>
+
+	body {
+		margin-top: 40px;
+		text-align: center;
+		font-size: 14px;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		}
+		
+	#wrap {
+		width: 1200px;
+		margin: 0 auto;
+		}
+		
+	#external-events {
+		float: left;
+		width: 150px;
+		padding: 0 10px;
+		border: 1px solid #ccc;
+		background: #eee;
+		text-align: left;
+		}
+		
+	#external-events h4 {
+		font-size: 16px;
+		margin-top: 0;
+		padding-top: 1em;
+		}
+		
+	.external-event { /* try to mimick the look of a real event */
+		margin: 10px 0;
+		padding: 2px 4px;
+		background: #3366CC;
+		color: #fff;
+		font-size: .85em;
+		cursor: pointer;
+		}
+		
+	#external-events p {
+		margin: 1.5em 0;
+		font-size: 11px;
+		color: #666;
+		}
+		
+	#external-events p input {
+		margin: 0;
+		vertical-align: middle;
+		}
+
+	#calendar {
+		float: right;
+		width: 900px;
+	}
+
+	aside {
+		float: left;
+		width: 300px;
+	}
+	
+	#add-miting label {
+		display: block;
+	}
+
+	#add-button, #add-temp-button {
+		width: 100%;
+		padding: 5px;
+	}
+	
+	#add-miting-to-temp, #add-miting {
+		float: left;
+		border: 1px solid #ccc;
+		background: #eee;
+		padding: 10px;
+		margin: 10px 0;
+	}
+</style>
+</head>
+<body>
+	<div id='wrap'>
+	<aside>
+		<div id='external-events'>
+			<h4>Draggable Events</h4>
+			<div class='external-event'>My Event 1</div>
+			<div class='external-event'>My Event 2</div>
+			<div class='external-event'>My Event 3</div>
+			<div class='external-event'>My Event 4</div>
+			<div class='external-event'>My Event 5</div>
+			<p>
+				<input type='checkbox' id='drop-remove' /> <label for='drop-remove'>remove after drop</label>
+			</p>
+		</div>
+
+		<div id="add-miting">
+			<label for="title">Meeting Title:</label>
+			<input type="text" id="title">
+			<div id="datepicker"></div>
+			<button id="add-button">Add</button>
+		</div>
+
+		<div id="add-miting-to-temp">
+			<label for="temp-title">Meeting Title:</label>
+			<input type="text" id="temp-title">
+			<button id="add-temp-button">Add</button>
+		</div>
+
+		<div>
+			<button id='save'>Save</button>
+		</div>
+	</aside>
+
+	<div id='calendar'></div>
+
+	<div style='clear:both'></div>
+	</div>
+	
+	<script>
+
+		function initializeExternalEvent(object) {
+			$(object).each(function() {
+				
+				var eventObject = {
+					title: $.trim($(this).text()),
+				};
+				
+				$(this).data('eventObject', eventObject);
+				
+				$(this).draggable({
+					zIndex: 999,
+					revert: true,      
+					revertDuration: 0  
+				});
+				
+			});
+		}
+
+		function initializeEvent(date, currTitle) {
+			
+				var eventObject = {
+					title: currTitle,
+				};
+				
+				$(this).data('eventObject', eventObject);
+				var copiedEventObject = $.extend({}, eventObject);
+					
+				copiedEventObject.start = date;
+
+				return copiedEventObject;
+		}
+
+		function loadMeetings() {
+			for(i = 0; i < sessionStorage.length; i += 1) {
+				var currObject = sessionStorage.getObject(sessionStorage.key(i));
+				var currEvent = initializeEvent(new Date(currObject.start), currObject.title);
+				$('#calendar').fullCalendar('renderEvent', currEvent, true);
+			}
+		}
+
+		$(document).ready(function() {
+		
+			initializeExternalEvent('#external-events div.external-event');
+			
+			$('#calendar').fullCalendar({
+				header: {
+					left: 'prev,next today',
+					center: 'title',
+					right: 'month,agendaWeek,agendaDay'
+				},
+				editable: true,
+				droppable: true, 
+				drop: function(date, allDay) { 
+					var originalEventObject = $(this).data('eventObject');
+					var copiedEventObject = $.extend({}, originalEventObject);
+					
+					copiedEventObject.start = date;
+					copiedEventObject.allDay = allDay;
+
+					$('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+					
+					if ($('#drop-remove').is(':checked')) {
+						$(this).remove();
+					}
+
+				},
+				eventClick: function(event) {
+					if(confirm('Are you sure from removing the event?')){
+						$('#calendar').fullCalendar('removeEvents', event._id);
+					} 
+				}
+			});
+
+			$("#datepicker").datepicker({
+				inline: true
+			});
+			
+			loadMeetings();
+		});
+
+		$('#save').click(function() {
+			sessionStorage.clear();
+			var events = $('#calendar').fullCalendar('clientEvents');
+			var i = 0;
+			for(i = 0; i < events.length; i += 1){
+				sessionStorage.setObject(events[i].title + i, {start: events[i].start, title: events[i].title});
+			}
+		});
+
+		$("#add-button").click(function() {
+			var currTitle = $("#title").val();
+			var date = $("#datepicker").datepicker( "getDate" );
+			var currEvent = initializeEvent(date, currTitle);
+			$('#calendar').fullCalendar('renderEvent', currEvent, true);
+		});
+
+		$("#add-temp-button").click(function() {
+			var currTitle = $("#temp-title").val();
+			$("#external-events p").before("<div class='external-event ui-draggable'>" + currTitle + "</div>");
+			initializeExternalEvent("#external-events div.external-event");
+		});
+	</script>
+</body>
+</html>

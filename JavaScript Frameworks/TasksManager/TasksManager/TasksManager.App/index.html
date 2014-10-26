@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Styles/bootstrap.css" rel="stylesheet" />
+    <link href="Scripts/libraries/kendo.common.min.css" rel="stylesheet" />
+    <link href="Scripts/libraries/kendo.black.min.css" rel="stylesheet" />
+    <link href="Styles/styles.css" rel="stylesheet" />
+</head>
+    <body>
+        <header >
+            <div id="buttons" class="clearfix">
+                <ul id="menu" class="navbar">
+                    <li><a href="/#/">Home</a></li>
+                    <li class="logged-out"><a href="/#/login">Login</a></li>
+                    <li class="logged-out"><a href="/#/register">Register</a></li>
+                    <li class="logged-in"><a href="/#/logout">Logout</a></li>
+                </ul>
+                <ul class="logged-in" id="second-menu">
+                    <li id="title">Appointments</li>
+                    <li><a href="/#/appointments/create">Create</a></li>
+                    <li><a href="/#/appointments/all">All</a></li>
+                    <li><a href="/#/appointments/upcomming">Upcomming</a></li>
+                    <li><a href="/#/appointments/today">Today</a></li>
+                    <li><a href="/#/appointments/current">Current</a></li>
+                    <li><a href="/#/appointments/date">By date</a></li>
+                </ul>
+                <ul id="todo-menu">
+                    <li id="Li1">TODOs</li>
+                    <li><a href="/#/todo-lists">TODO Lists</a></li>
+                    <li><a href="/#/todo-lists/create">Create List</a></li>
+                </ul>
+            </div>
+        </header>
+        <div id="body"></div>
+        <script src="Scripts/libraries/class.js"></script>
+        <script src="Scripts/libraries/q.js"></script>
+        <script src="Scripts/libraries/sha1.js"></script>
+        <script src="Scripts/libraries/jquery.min.js"></script>
+        <script src="Scripts/libraries/kendo.web.min.js"></script>
+        <script src="Scripts/apps/http-requester.js"></script>
+        <script src="Scripts/apps/data.js"></script>
+        <script src="Scripts/apps/view.js"></script>
+        <script src="Scripts/apps/viewModel.js"></script>
+        <script src="Scripts/app-config.js"></script>
+    </body>
+</html>

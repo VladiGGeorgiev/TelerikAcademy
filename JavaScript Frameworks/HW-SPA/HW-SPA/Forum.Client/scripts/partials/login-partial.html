@@ -1,0 +1,49 @@
+﻿<div id="login-wrapper">
+    <div id="login-register" class="k-content">
+        <ul>
+            <li class="k-state-active">Login</li>
+            <li>Register</li>
+        </ul>
+        <div id="login-form">
+            <form>
+                <ul>
+                    <li>
+                        <label for="login-username">Username:</label>
+                        <input type="text" id="login-username" data-bind="value:username" />
+                    </li>
+                    <li>
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" data-bind="value:password" />
+                    </li>
+                    <li>
+                        <span id="login-error"></span>
+                        <button id="login-btn" data-bind="click:login">Login</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div id="register-form">
+            <form>
+                <ul>
+                    <li>
+                        <label for="register-username">Username:</label>
+                        <input type="text" id="register-username" data-bind="value:username" />
+                    </li>
+                    <li>
+                        <label for="register-nickname">Nickname:</label>
+                        <input type="text" id="register-nickname" data-bind="value:nickname" />
+                    </li>
+                    <li>
+                        <label for="register-password">Password:</label>
+                        <input type="password" id="register-password" data-bind="value:password" />
+                    </li>
+                    <li>
+                        <span id="register-error"></span>
+                        <button id="register-btn" data-bind="click:register">Register</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <p data-bind="text:errMessage" class="info-message"></p>
+</div>

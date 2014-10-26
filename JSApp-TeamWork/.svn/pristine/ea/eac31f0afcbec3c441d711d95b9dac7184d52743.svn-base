@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='styles/fullcalendar.css' rel='stylesheet' />
+<link href='styles/meetings-styles.css' rel='stylesheet' />
+<link href='styles/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js'></script>
+<script src='scripts/fullcalendar.min.js'></script>
+<script src='scripts/web-storage-objects.js'></script>
+</head>
+<body>
+	<div id='wrap'>
+	<aside>
+		<button class='fc-state-default button', id='save'>Save</button>
+		<div id="add-miting-to-temp">
+			<label for="temp-title">Meeting Title:</label>
+			<input type="text" id="temp-title">
+			<button id="add-temp-button" class='fc-state-default button'>Add</button>
+		</div>
+
+		<div id='external-events'>
+			<h4>Draggable Events</h4>
+			<div class='external-event'>My Event 1</div>
+			<div class='external-event'>My Event 2</div>
+			<div class='external-event'>My Event 3</div>
+			<div class='external-event'>My Event 4</div>
+			<div class='external-event'>My Event 5</div>
+			<p>
+				<input type='checkbox' id='drop-remove' /> <label for='drop-remove'>remove after drop</label>
+			</p>
+		</div>
+		
+		<div id="add-miting">
+			<label for="title">Meeting Title:</label>
+			<input type="text" id="title">
+			<div id="datepicker"></div>
+			<button id="add-button" class='fc-state-default button'>Add</button>
+		</div>
+	</aside>
+
+	<div id='calendar'></div>
+
+	<div style='clear:both'></div>
+	</div>	
+	
+	<script src='scripts/meetings-main.js'></script>
+</body>
+</html>

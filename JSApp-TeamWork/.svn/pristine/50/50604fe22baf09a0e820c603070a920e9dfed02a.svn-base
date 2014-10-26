@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Organiser</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="styles/todo-styles.css"/>
+    <script src="scripts/jquery-1.10.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="scripts/knockout-2.2.1.js"></script>
+    <script src="scripts/todos.js"></script>
+    <!--<link rel="stylesheet" href="/resources/demos/style.css" />-->
+    <script>
+    $(function () {
+        $("#tabs").tabs();
+    });
+    </script>
+</head>
+<body>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Meetings</a></li>
+            <li><a href="#tabs-2">Deadlines</a></li>
+            <li><a href="#tabs-3">Todos</a></li>
+            <li><a href="#tabs-4">All events</a></li>
+            <li><a href="#tabs-5">...</a></li>
+        </ul>
+        <div id="tabs-1">
+            <p>1. Add meeting (start datetime, end datetime)</p>
+            <p>2. Remove meeting</p>   
+        </div>
+        <div id="tabs-2">
+            <p>1. Add deadline - Datepicker</p>
+            <p>2. View all deadlines in calendar</p>
+            <p>3. Mark deadlines as done</p>
+        </div>
+
+        <!-- ToDos Start: -->
+        <div id="tabs-3">
+            <label for='date'>Pick a date: </label>
+            <input type='text' id='date' />
+            <div class="enter_todo" id="enter_todo">
+                <form id="todo_form" action="index.html" method="POST">
+                    <input id="todo_description" name="todo_description" size="55" type="text" />
+                    <input id="add_todo" type="submit" value="Add" />
+                </form>
+            </div> 
+            <div id = 'todo-container'></div>
+            <script type="text/javascript">
+            $('#date').datepicker();
+
+            //Attach event to datepicker
+            $('#date').on('change',function(){
+                var date = $('#date').datepicker('getDate');
+                toDoLists.renderToDoList("#todo-container",date);
+            });
+
+            //Attach event 'click' to addButton
+            $('#add_todo').on('click',function(e){
+                e.preventDefault();
+                var text = $('#todo_description').val();
+                if (text){
+                    var date = $('#date').datepicker('getDate');
+                    toDoLists.allToDoLists.addToDo(date,text);
+                    toDoLists.renderToDoList("#todo-container",date);
+                    $('#todo_description').val('');
+                }
+            });
+
+            
+            </script>
+        </div>
+        <!-- ToDos End -->
+        
+        <div id="tabs-4">
+            <p>Display all events in calendar with different colors.</p>
+        </div>
+    </div>
+
+</body>
+</html>

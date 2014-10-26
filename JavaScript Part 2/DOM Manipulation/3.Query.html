@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script>
+        if (!document.querySelector || !document.querySelectorAll) {
+            document.querySelectorAll = function (selector) {
+                if (selector[0] === '#') {
+                    return document.getElementById(selector.substr(1));
+                }
+                else if (selector[0] === '.') {
+                    return document.getElementsByClassName(selector.substr(1));
+                }
+                else {
+                    return document.getElementsByTagName(selector);
+                }
+            }
+
+            document.querySelector = function (selector) {
+                return document.getElementById(selector.substr(1));
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="first">dara bara 100 chadyra</div>
+    <div>dara bara 200 chadyra</div>
+    <div>dara bara 300 chadyra</div>
+    <script>
+        var allDivs = document.querySelectorAll("div");
+
+        for (var i = 0; i < allDivs.length; i++) {
+            allDivs[i].style.backgroundColor = 'red';
+            allDivs[i].style.color = 'blue';
+        }
+
+        var firstDiv = document.querySelector("#first");
+        firstDiv.style.color = 'orange';
+    </script>
+</body>
+</html>

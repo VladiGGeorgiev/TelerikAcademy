@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tag Cloud</title>
+    <style>
+        #wrapper {
+            width: 300px;
+            height: 300px;
+        }
+        textarea {
+            width: 200px;
+            height: 200px;
+        }
+        input {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <label for="minFontSize">Insert min font size:</label>
+        <input type="text" name="name" value=" " id="minFontSize" /><span> px</span><br />
+        <label for="maxFontSize">Insert max font size:</label>
+        <input type="text" name="name" value=" " id="maxFontSize" /><span> px</span><br/>
+        <button id="btn">Click</button>
+        <div id="tags"></div>
+    </div>
+    <script src="TagCloud.js"></script>
+</body>
+</html>

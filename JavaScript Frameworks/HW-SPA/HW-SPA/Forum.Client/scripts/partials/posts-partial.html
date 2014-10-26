@@ -1,0 +1,25 @@
+﻿<div id="posts">
+    <form>
+        <div id="title-tags">Search by tags</div>
+        <div data-template="all-tags" data-bind="source: tags" class="all-tags"></div>
+        <input type="text" id="tb-search" data-bind="value: searchTags" placeholder="Input tags separated by single interval!" />
+        <button id="search-btn" data-bind="click: search">Search</button>
+    </form>
+    <ul data-template="posts-row-template" data-bind="source: posts"></ul>
+    <p data-bind="text:postMessage" class="info-message"></p>
+</div>
+
+<script type="text/x-kendo-template" id="posts-row-template">
+        <li>
+            <a href="\#/posts/#=id#">#:title#</a>
+            <div data-template="post-tags" data-bind="source:tags" class="tags"></div>
+        </li>
+</script>
+
+<script type="text/x-kendo-template" id="post-tags">
+    <span class="tag" data-bind="text: tag"></span>
+</script>
+
+<script type="text/x-kendo-template" id="all-tags">
+    <span class="tag" data-bind="text: name"></span>
+</script>

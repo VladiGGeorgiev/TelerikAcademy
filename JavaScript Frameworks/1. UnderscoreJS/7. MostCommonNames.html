@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script src="ScriptLibraries/class.js"></script>
+    <script src="ScriptLibraries/underscore.js"></script>
+    <script>
+        var Human = Class.create({
+            init: function (firstName, lastName) {
+                this.firstName = firstName;
+                this.lastName = lastName;
+            },
+
+            toString: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        });
+
+        var students = [
+            new Human("Peter", "Petrov"),
+            new Human("Joro", "Minkov"),
+            new Human("Angel", "Petrov"),
+            new Human("Valeri", "Georgiev"),
+            new Human("Valeri", "Peshev"),
+            new Human("Minnka", "Minkov"),
+            new Human("Didka", "Minkov")
+        ];
+
+        var fnameCount = _.countBy(students, function(student) {
+            return student.firstName;
+        });
+        
+        var lnameCount = _.countBy(students, function (student) {
+            return student.lastName;
+        });
+
+        var maxFnames = _.max(fnameCount);
+        var maxLnames = _.max(lnameCount);
+
+        for (var name in fnameCount) {
+            if (fnameCount[name] == maxFnames) {
+                console.log(name);
+            }
+        }
+
+        for (var name in lnameCount) {
+            if (lnameCount[name] == maxFnames) {
+                console.log(name);
+            }
+        }
+    </script>
+</body>
+</html>

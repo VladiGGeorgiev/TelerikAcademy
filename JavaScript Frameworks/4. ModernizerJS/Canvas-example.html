@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ExplorerCanvas Example 1</title>
+    <script src="scripts/modernizr.custom.76152.js"></script>
+    <script>
+        Modernizr.load({
+            test: Modernizr.canvas,
+            nope: 'scripts/excanvas.js',
+        });
+    </script>
+    <script src="scripts/moving-object.js"></script>
+	<style>
+	body {
+		background-color:black;
+		margin:50px;
+		text-align:center;
+	}
+	</style>
+</head>
+<body onload="load();">
+ <canvas id="cv" width="400" height="300"></canvas>
+</body>
+</html>

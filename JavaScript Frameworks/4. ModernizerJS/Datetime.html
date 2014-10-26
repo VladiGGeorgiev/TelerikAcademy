@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-2.0.3.js"></script>
+    <script src="scripts/modernizr.custom.87045.js"></script>
+</head>
+<body>
+    <input type="date" id="dateTimePicker"/>
+    <script>
+        Modernizr.load({
+            test: Modernizr.inputtypes.date,
+            nope: 'scripts/datetime-picker.js'
+        });
+    </script>
+</body>
+</html>

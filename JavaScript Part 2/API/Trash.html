@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Trash</title>
+
+    <style>
+
+        #trash-open, #trash-close {
+            width: 250px;
+        }
+
+        #wrapper {
+            position: relative;
+        }
+
+        #trash {
+            width: 250px;
+            height: 350px;
+            background-image: url('images/trash-closed.png');
+            -moz-background-size: 230px;
+            -o-background-size: 230px;
+            -webkit-background-size: 230px;
+            background-size: 230px;
+        }
+
+        #wrapper ul {
+            list-style: none;
+        }
+
+        #wrapper ul li {
+            display: inline-block;
+        }
+
+            ul li a {
+                text-decoration: none;
+                color: #000;
+            }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <ul>
+            <li>Time: <input id="time" type="text" name="name" value="Play" disabled="disabled" /></li>
+            <li><input id="show-results" type="button" name="name" value="Show results" /></li>
+        </ul>
+        <div id="trash"></div>
+    </div>
+    
+    <div id="results"></div>
+    <script src="scripts/Trash.js"></script>
+</body>
+</html>

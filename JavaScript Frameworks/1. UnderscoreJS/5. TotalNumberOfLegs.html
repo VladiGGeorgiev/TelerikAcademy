@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script src="ScriptLibraries/class.js"></script>
+    <script src="ScriptLibraries/underscore.js"></script>
+    <script>
+        var Animal = Class.create({
+            init: function (name, species, legs) {
+                this.name = name;
+                this.species = species;
+                this.legs = legs;
+            },
+
+            toString: function () {
+                return this.name + " - " + this.species + " -> Legs: " + this.legs;
+            }
+        });
+
+        var animals = [
+            new Animal("Peter", "Dog", 4),
+            new Animal("Joro", "Dog", 2),
+            new Animal("Angel", "Dolphin", 6),
+            new Animal("Valeri", "Dolphin", 8),
+            new Animal("Minnka", "spider", 8),
+            new Animal("Didka", "chicken", 2),
+            new Animal("Ivan", "dog", 4)
+        ];
+
+        function CountTotalNumberOfLegs(animals) {
+            var sum = _.reduce(animals, function(memo, animal) {
+                return memo + animal.legs;
+            }, 0);
+
+            return sum;
+        }
+
+        var sumLegs = CountTotalNumberOfLegs(animals);
+        console.log(sumLegs);
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+body {
+	width: 1300px;
+}
+
+html, #map-canvas {
+	margin: 0;
+	padding: 0;
+	height: 600px;
+	width: 1200px;
+}
+
+#get-previous {
+	margin:10px 1060px 10px 0;
+}
+
+a {
+	cursor: pointer;
+	padding: 0 34px;
+	border: 1px solid #000;
+}
+
+a:hover {
+	text-decoration: underline;
+}

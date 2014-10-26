@@ -1,0 +1,108 @@
+body {
+	margin-top: 40px;
+	text-align: center;
+	font-size: 14px;
+	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	}
+	
+#wrap {
+	width: 1200px;
+	margin: 0 auto;
+	}
+	
+#external-events {
+	float: left;
+	width: 250px;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+	background: #eee;
+	text-align: left;
+	}
+	
+#external-events h4 {
+	font-size: 16px;
+	margin-top: 0;
+	padding-top: 1em;
+	}
+	
+.external-event { /* try to mimick the look of a real event */
+	margin: 10px 0;
+	padding: 2px 4px;
+	background: #3366CC;
+	color: #fff;
+	font-size: .85em;
+	cursor: pointer;
+	}
+	
+#external-events p {
+	margin: 1.5em 0;
+	font-size: 11px;
+	color: #666;
+	}
+	
+#external-events p input {
+	margin: 0;
+	vertical-align: middle;
+	}
+
+#calendar {
+	float: right;
+	width: 900px;
+}
+
+aside {
+	float: left;
+	width: 300px;
+}
+
+#add-miting label {
+	display: block;
+}
+
+#add-button, #add-temp-button {
+	width: 100%;
+	padding: 5px;
+}
+
+#add-miting-to-temp, #add-miting {
+	float: left;
+	width: 250px;
+	border: 1px solid #ccc;
+	background: #eee;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+div.ui-datepicker {
+	width: 16em;
+}
+
+#save {
+	float: left;
+	width: 273px;
+}
+
+.button {
+	cursor: pointer;
+	font-weight: bolder;
+	padding: 10px;
+}
+
+.button:hover {
+	background-color: #e6e6e6;
+	color: #333333;
+	text-decoration: none;
+	background-position: 0 -15px;
+	-webkit-transition: background-position 0.1s linear;
+	   -moz-transition: background-position 0.1s linear;
+	     -o-transition: background-position 0.1s linear;
+	        transition: background-position 0.1s linear;
+	}
+}
+
+.button:active {
+	background-color: #cccccc;
+	background-image: none;
+	outline: 0;
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}

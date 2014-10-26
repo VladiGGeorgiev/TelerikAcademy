@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Battle Game</title>
+    <link href="styles/bootstrap.css" rel="stylesheet" />
+    <link href="styles/Scss1.css" rel="stylesheet" />
+    <script src="scripts/libs/jquery-2.0.3.js"></script>
+    <script src="Scripts/libs/bootstrap.js"></script>
+    <script src="scripts/libs/require.js" data-main="scripts/app-config"></script>
+    <script src="scripts/libs/core.js"></script>
+    <script src="scripts/libs/sha1.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header"></div>
+        <div id="content"></div>
+    </div>
+    <script type="x-mustache-template" id="login-template">
+        <div id="login-container" class="forms">
+            <div class="border start">
+                <a href="#/register">Go register</a>
+                <form class="clear-after">
+                    <label for="login-username">Username</label>
+                    <input id="login-username" type="text" placeholder="Username" />
+                    <label for="login-password">Password</label>
+                    <input id="login-password" type="password" placeholder="Password" />
+                    <input id="login-button" type="submit" value="LOG IN" />
+                    <div id="login-reg-errors"></div>
+                </form>
+            </div>
+        </div>
+    </script>
+
+    <script type="x-mustache-template" id="register-template">
+        <div id="register-container" class="forms">
+            <div class="border start">
+                <a href="#/login">Go login</a>
+                <form class="clear-after">
+                    <label for="reg-username">Username</label>
+                    <input id="reg-username" type="text" placeholder="Username" />
+                    <label for="reg-nickname">Nickname</label>
+                    <input id="reg-nickname" type="text" placeholder="Nickname" />
+                    <label for="reg-password">Password</label>
+                    <input id="reg-password" type="password" placeholder="Password" />
+                    <input id="register-button" type="submit" value="Register" />
+                    <div id="login-reg-errors"></div>
+                </form>
+            </div>
+        </div>
+    </script>
+
+    <script type="x-mustache-template" id="game-template">
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </script>
+</body>
+</html>

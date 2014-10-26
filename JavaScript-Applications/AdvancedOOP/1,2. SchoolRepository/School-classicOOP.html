@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Repository</title>
+</head>
+<body>
+    <h1>Look the console</h1>
+    <script src="class-create.js"></script>
+    <script src="School-classicOOP.js"></script>
+    <script>
+        var pesho = new Student("Pesho", "Vodkata", 15, 3);
+        var gosho = new Student("George", "Rakiata", 16, 4);
+        var vlado = new Student("Vlado", "Mastikata", 14, 4);
+        var pepo  = new Student("Pepo", "Vodata", 13, 3);
+        var canko = new Student("Canko", "Kirkata", 17, 2);
+        
+        var georgiev = new Teacher("George", "Georgiev", 40, "Computer Science");
+        var manchev = new Teacher("False", "Manchev", 3, "Math");
+                
+        var html = new SchoolClass("HTML", 10, {pesho: pesho, gosho: gosho, vlado: vlado, pepo: pepo, canko: canko}, georgiev); 
+
+        console.log(pesho.introduce());
+        console.log(pepo.introduce());
+        console.log(vlado.introduce());
+        console.log(georgiev.introduce());
+    </script>
+</body>    
+</html>

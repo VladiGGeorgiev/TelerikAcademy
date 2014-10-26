@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        table td, table th {
+            border: 1px solid #000;
+        }
+
+        table th {
+            background-color: #eee;
+        }
+
+        table {
+            
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        tr table {
+            width: 100%;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid-view-holder"></div>
+    <p>Look console for local storage data.</p>
+    <script src="scripts.js"></script>
+    <script src="schoolsRepository.js"></script>
+    <script>
+        var schoolsGrid = controls.getGridView("#grid-view-holder");
+        schoolsGrid.addHeader(["Name", "Location", "Students"])
+        schoolsGrid.addRow(["PMG", "Burgas", "Pesho"]);
+        schoolsGrid.addRow(["EG", "Varna", "Pesho"]);
+
+        var academyRow = schoolsGrid.addRow(["Telerik", "Sofia", "Gosho"]);
+
+        schoolsGrid.render();
+        var academyGrid = academyRow.getNestedGridView();
+        academyGrid.addHeader(["Title", "Date", "Students"]);
+        academyGrid.addRow(["JS", "11", 400]);
+        academyGrid.addRow(["JS", "11", 400]);
+
+        //Task 3 - Creating object data to save it to localStorage
+        var pesho = new Student({ firstName: "Pesho", lastName: "Ivanov", grade: 3, mark: 5 });
+        var gosho = new Student({ firstName: "Gosho", lastName: "Ivanov", grade: 2, mark: 6 });
+        var html = new Course({ title: "HTML", startDate: "24 may 2013", totalStudents: 20, students: { pesho: pesho, gosho: gosho }});
+        var pmg = new School({ name: "PMG", location: "Sofia", numberOfCourses: 4, speciality: "Coumputer Science", setOfCourses: html })
+
+        schoolsRepository.save("school-repository", pmg);
+        //Task 4 - Get data from local storage. Look console
+        var data = schoolsRepository.load("school-repository");
+        console.log(data);
+    </script>
+</body>
+</html>
+    

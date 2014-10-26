@@ -1,0 +1,17 @@
+﻿<fieldset>
+    <legend>Create Appointment</legend>
+    <label for="tb-subject">Subject:</label>
+    <input data-bind="value: subject" type="text" id="tb-subject" class="k-textbox" /> <br/>
+
+    <label for="tb-description">Description:</label>
+    <input data-bind="value: description" type="text" id="tb-description" class="k-textbox" /><br/>
+    
+    <label for="tb-appointmentDate">AppointmentDate:</label>
+    <input data-bind="value: appointmentDate" type="date" id="tb-appointmentDate" class="k-textbox" /><br/>
+    
+    <label for="tb-duration">Duration:</label>
+    <input data-bind="value: duration" type="text" id="tb-duration" class="k-textbox" /><br/>
+    
+    <button data-bind="click: createAppointment" class="k-button" id="createApp-btn">Create appointment</button>
+    <p class="info-message" data-bind="text: infoMessage"></p>
+</fieldset>

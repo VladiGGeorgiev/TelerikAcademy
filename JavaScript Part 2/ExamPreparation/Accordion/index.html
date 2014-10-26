@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Accordion</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="accordion-wrapper"></div>
+    <script src="LocalStorage-Extenssions.js"></script>
+    <script src="repository.js"></script>
+    <script src="controls.js"></script>
+    <script>
+        var accordion = controls.getAccordion("#accordion-wrapper");
+        accordion.add("Misho");
+        accordion.add("Pesho");
+        var gosho = accordion.add("Gosho");
+        var j = gosho.add("JJJJJJJJJJJJJJ");
+        var p = j.add("asdasdad");
+        p.add("oooooooooooo");
+        gosho.add("A").add("hello"); 
+        gosho.add("B");
+        accordion.renderAll();
+        accordion.add("Didko").add("OPP").add("asd");
+        accordion.add("Jivko");
+        accordion.renderAll();
+
+        var serializedAcc = accordion.serialize();
+        localStorage.setObject("accordion", serializedAcc);
+    </script>
+</body>
+</html>

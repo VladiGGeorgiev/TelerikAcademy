@@ -1,0 +1,70 @@
+.todo label:before{
+	content: url('images/bomb.png');
+}
+.todo label {
+	display: block;
+}
+#todo-container, #progress-container, #done-container{
+	width: 400px;
+	height: 900px;
+	margin-left: 13px;
+	border: 1px solid black;
+	float: left;
+	overflow: auto;
+	z-index: 1;
+}
+#main-todo-container{
+	height: 900px;
+}
+#todo-container
+{
+	background: url('images/red-board.jpg');
+}
+
+#progress-container
+{
+	background: url('images/yellow-board.jpg');
+}
+
+#done-container
+{
+	background: url('images/green-board.jpg');
+}
+
+input#todo_description{
+	background: url('images/quill.png') no-repeat;
+	padding-left: 40px;
+}
+
+input#date{
+	background: url('images/calendarIcon.png') no-repeat;
+	padding-left: 40px;
+	height: 30px;
+}
+
+.todo{
+	background: url('images/note.png') no-repeat;
+	padding: 25px;
+	width: 200px;
+	height: 200px;
+	margin-left:75px;
+	overflow: auto;
+	word-wrap: break-word;
+}
+h1{
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	
+}
+#todo-container h1 span{
+	color: white;
+	border-bottom: 3px solid white;
+}
+#progress-container h1 span{
+	color: gray;
+	border-bottom: 3px solid gray;
+}
+#done-container h1 span{
+	color: black;
+	border-bottom: 3px solid black;
+}

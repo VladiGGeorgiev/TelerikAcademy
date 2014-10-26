@@ -1,0 +1,10 @@
+﻿<fieldset>
+    <legend>Create TODO List</legend>
+    <label for="tb-title">Title:</label>
+    <input data-bind="value: title" type="text" id="tb-title" class="k-textbox" /> <br/>
+    <label for="tb-todos">TODOs: separated with commas</label>
+    <input data-bind="value: todos" type="text" id="tb-todos" class="k-textbox" /> <br/>
+    
+    <button data-bind="click: createTodoList" class="k-button" id="createApp-btn">Create TODO List</button>
+    <p class="info-message" data-bind="text: infoMessage"></p>
+</fieldset>

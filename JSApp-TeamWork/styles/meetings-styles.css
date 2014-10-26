@@ -1,0 +1,140 @@
+body {
+	text-align: center;
+	font-size: 14px;
+	font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	}
+	
+#wrap {
+	width: 1300px;
+	margin: 0 auto;
+	}
+	
+#meeting-events, #deadline-events {
+	float: left;
+	width: 150px;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+	background: #eee;
+	text-align: left;
+}
+
+#meeting-events {
+	margin-right: 20px;
+}
+	
+#meeting-events h4, #deadline-events h4 {
+	font-size: 16px;
+	margin-top: 0;
+	padding-top: 1em;
+}
+	
+.meeting-event, .deadline-event { /* try to mimick the look of a real event */
+	margin: 10px 0;
+	padding: 2px 4px;
+	background: #3366CC;
+	color: #fff;
+	font-size: .85em;
+	cursor: pointer;
+	}
+	
+#meeting-events p, #deadline-events p {
+	margin: 1.5em 0;
+	font-size: 11px;
+	color: #666;
+	}
+	
+#meeting-events p input, #deadline-events p input {
+	margin: 0;
+	vertical-align: middle;
+	}
+
+.deadline-event {
+	background: #C20000;
+}
+
+#calendar {
+	float: right;
+	width: 900px;
+}
+
+aside {
+	float: left;
+	width: 370px;
+}
+
+#add-miting input[type="text"] {
+	width: 150px;
+	margin-bottom: 5px;
+}
+
+#add-button, #add-temp-button {
+	width: 40%;
+	padding: 5px;
+}
+
+#add-miting-to-temp, #add-miting {
+	float: left;
+	width: 343px;
+	border: 1px solid #ccc;
+	background: #eee;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+#add-miting-to-temp div {
+	float: left;
+	display: block;
+}
+
+div.ui-datepicker {
+	width: 16em;
+}
+
+.red {
+	background: #C20000;
+}
+
+.blue {
+	background: #3366CC;
+}
+
+#save {
+	width: 99%;
+}
+
+.button {
+	cursor: pointer;
+	font-weight: bolder;
+	padding: 10px;
+}
+
+.button:hover {
+	background-color: #e6e6e6;
+	color: #333333;
+	text-decoration: none;
+	background-position: 0 -15px;
+	-webkit-transition: background-position 0.1s linear;
+	   -moz-transition: background-position 0.1s linear;
+	     -o-transition: background-position 0.1s linear;
+	        transition: background-position 0.1s linear;
+	
+}
+
+.button:active {
+	background-color: #cccccc;
+	background-image: none;
+	outline: 0;
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+#temp-title {
+	padding: 5px;
+}
+
+#add-to-deadline, #add-deadline {
+	margin-left: 30px;
+}
+
+footer {
+	margin-top: 10px;
+}

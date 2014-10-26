@@ -1,0 +1,13 @@
+﻿<h2>Single TODO List</h2>
+<table class="table-striped" style="width: 800px" data-template="todo-template" data-bind="source: todoList" ></table>
+<script type="text/x-kendo-template" id="todo-template">
+        <tr><th colspan=2>Title: <strong>#: title #</strong></th></tr> <br />
+        <tr><th>Text</th><th>IsDone</th></tr>
+        # for (var i = 0; i < todos.length; i++) { #
+            <tr>
+                <td>#: todos[i].text #</td>
+                <td>#: todos[i].isDone #</td>
+                <td><a class=button href="\\#/todo-list/change-status/#:todos[i].id#">Change status</a></td>
+            </tr>
+        # } #
+</script>

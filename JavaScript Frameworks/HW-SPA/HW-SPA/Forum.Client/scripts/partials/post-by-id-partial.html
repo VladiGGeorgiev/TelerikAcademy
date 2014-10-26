@@ -1,0 +1,29 @@
+﻿<div id="post" data-template="post-template" data-bind="source: post">
+</div>
+
+<script type="text/x-kendo-template" id="post-template">
+    <div>
+        <h2>#=title#</h2>
+        <div id="post-creator">by <strong>#=creator#</strong></div>
+        <div id="post-date">#=postDate#</div>
+        <p>#=content#</p>
+        <div id="tags">
+            #for (var i=0; i<tags.length; i+=1) {#
+            <span class="tag">#=tags[i]#</span>
+            #}#
+        </div>
+    </div>
+    <div id="comments">
+        <h3>Comments</h3>
+        <a id="comment-btn" href="\#/posts/#=id#/comment" title="Comment">Comment</a>
+        <dl>
+            #for (var i=0; i<comments.length; i+=1) {#
+                <dt><p>#=comments[i].content#</p></dt>
+                <dd>
+                    <div class="comment-creator">by #=comments[i].creator#</div>
+                    <div class="comment-date">#=comments[i].postDate#</div>
+                </dd>
+            #}#
+        </dl>
+    </div>
+</script>

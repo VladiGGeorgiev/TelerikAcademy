@@ -1,0 +1,161 @@
+﻿<div id="chat">
+    
+    <!-- Users -->
+
+    <div class="section section-users">
+        <div class="relative">
+            <div class="circle-header circle-header-two"></div>
+            <div class="circle-header-text">
+                USERS ( <span id="people-online">1</span> )
+            </div>
+            <div class="circle-header-icon circle-header-icon-two"></div>
+
+            <!-- List of People -->
+            <div id="list-of-people">
+                <div>
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-chat"></div>
+    <!-- Tabs -->
+    <!-- Chat box -->
+    <div class="section section-chatbox">
+        <div class="circle-header circle-header-three"></div>
+        <div class="circle-header-text">Chat</div>
+        <div class="circle-header-icon circle-header-icon-three"></div>
+
+        <!-- Chat Box -->
+        <div class="chat-box-area">
+            <div class="chat-box-area-inset">
+                <div class="relative">
+                    <div id="pubnub" pub-key="pub-c-5093de55-5a92-4b74-9522-d10c4c129dcc" sub-key="sub-c-20837058-05f4-11e3-991c-02ee2ddab7fe" 
+                        ssl="off" origin="pubsub.pubnub.com" ></div>
+                    <input id="chat-input" class="chat-box-input" placeholder="chat">
+                    <button id="chat-button" class="chat-box-button">Send</button>
+                </div>
+            </div>
+        </div>
+        <script src="http://cdn.pubnub.com/pubnub-3.5.3.min.js"></script>
+        
+        <!-- Chat Content Area -->
+        <script>
+            $(function () {
+                var tabTitle = $("#tab_title"),
+                    tabContent = $("#tab_content"),
+                    tabTemplate = "<li><a href='#{href}'>#{label}</a> <span class='ui-icon ui-icon-close' role='presentation'>Remove Tab</span></li>",
+                    tabCounter = 2;
+
+                var tabs = $("#tabs").tabs();
+
+                // modal dialog init: custom buttons and a "close" callback reseting the form inside
+                var dialog = $("#dialog").dialog({
+                    autoOpen: false,
+                    modal: true,
+                    buttons: {
+                        Add: function () {
+                            addTab();
+                            $(this).dialog("close");
+                        },
+                        Cancel: function () {
+                            $(this).dialog("close");
+                        }
+                    },
+                    close: setTimeout(function () {
+                        form[0].reset();
+                    }, 500)
+                });
+
+                // addTab form: calls addTab function on submit and closes the dialog
+                var form = dialog.find("form").submit(function (event) {
+                    addTab();
+                    
+                    dialog.dialog("close");
+                    event.preventDefault();
+                });
+
+                // actual addTab function: adds new tab using the input from the form above
+                function addTab() {
+                    var label = tabTitle.val() || "Tab " + tabCounter,
+                        id = "tabs-" + tabCounter,
+                        li = $(tabTemplate.replace(/#\{href\}/g, "#" + id).replace(/#\{label\}/g, label)),
+                        tabContentHtml = tabContent.val() || "Tab " + tabCounter + " content.";
+
+                    tabs.find(".ui-tabs-nav").append(li);
+                    tabs.append("<div class='box " + id + "'></div>");
+                    $("#update-area ul").append("<li><a href='#'>" + tabTitle.val() + "</a></li>");
+                    tabs.tabs("refresh");
+                    tabCounter++;
+                }
+
+                // addTab button: just opens the dialog
+                $("#add_tab")
+                    .button()
+                    .click(function () {
+                        dialog.dialog("open");
+                    });
+
+                // close icon: removing the tab on click
+                tabs.delegate("span.ui-icon-close", "click", function () {
+                    var panelId = $(this).closest("li").remove().attr("aria-controls");
+                    $("#" + panelId).remove();
+                    tabs.tabs("refresh");
+                });
+
+                tabs.bind("keyup", function (event) {
+                    if (event.altKey && event.keyCode === $.ui.keyCode.BACKSPACE) {
+                        var panelId = tabs.find(".ui-tabs-active").remove().attr("aria-controls");
+                        $("#" + panelId).remove();
+                        tabs.tabs("refresh");
+                    }
+                });
+            });
+        </script>
+
+        <div id="dialog" title="Tab data">
+            <form>
+                <fieldset class="ui-helper-reset">
+                    <label for="tab_title">Title</label>
+                    <input type="text" name="tab_title" id="tab_title" value="" class="ui-widget-content ui-corner-all" />
+                    <label for="tab_content">Password</label>
+                    <input type="text" name="tab_content" id="tab_content" class="ui-widget-content ui-corner-all" />
+                </fieldset>
+            </form>
+        </div>
+
+
+
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Base</a> <span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span></li>
+            </ul>
+            <div id="tabs-1">
+                
+            </div>
+        </div>
+       
+    </div>
+
+    <!-- Channels -->
+    <div class="section section-channels">
+        <div class="relative">
+            <div class="circle-header circle-header-one"></div>
+            <div class="circle-header-text">Channels</div>
+            <div class="circle-header-icon circle-header-icon-one"></div>
+            
+            <button type="button" id="add_tab" >Create Channel</button>
+            <!--<div class="time" id="time">01:00<sup>pm</sup></div>-->
+            <div class="time-line"></div>
+
+            <div id="update-area" class="update-area">
+                <div>
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

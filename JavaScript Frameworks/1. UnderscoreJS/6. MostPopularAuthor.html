@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script src="ScriptLibraries/class.js"></script>
+    <script src="ScriptLibraries/underscore.js"></script>
+    <script>
+        var Book = Class.create({
+            init: function (name, author) {
+                this.name = name;
+                this.author = author;
+            },
+
+            toString: function () {
+                return "Book: " + this.name + ", Author: " + this.author + "\n";
+            }
+        });
+
+        var books = [
+            new Book("Pod Igoto", "Ivan Vazov"),
+            new Book("Zatochenici", "Me"),
+            new Book("Padnaliq angel", "Me"),
+            new Book("Spisykyt", "Konrat"),
+            new Book("Imago", "Angelova"),
+            new Book("Predatelstvo", "Stiil"),
+            new Book("Mogilata", "Rusev")
+        ];
+
+        var booksByAuthor = _.groupBy(books, function(book) {
+            return book.author;
+        });
+
+        var sortedBooksByAuthor = _.sortBy(booksByAuthor, function(group) {
+            return group.length;
+        });
+
+        console.log("Most popular author: " + _.last(sortedBooksByAuthor)[0].author + " -> books written: " + _.last(sortedBooksByAuthor).length);
+        </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿<div id="posts">
+    <div id="title-tags">Search results: <span class="tag" data-bind="text: tags"></span></div>
+
+    <ul data-template="posts-row-template" data-bind="source: posts"></ul>
+    <p data-bind="text:postMessage" class="info-message"></p>
+</div>
+
+<script type="text/x-kendo-template" id="posts-row-template">
+        <li>
+            <a href="\#/posts/#=id#">#:title#</a>
+            <div data-template="post-tags" data-bind="source:tags" class="tags"></div>
+        </li>
+</script>
+
+<script type="text/x-kendo-template" id="post-tags">
+    <span class="tag" data-bind="text: tag"></span>
+</script>
+
+<script type="text/x-kendo-template" id="all-tags">
+    <span class="tag" data-bind="text: name"></span>
+</script>

@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<head>
+    <meta charset="utf-8" />
+    <title>LocalStorage polyfill</title>
+    <link href="styles/StoragesShiv.css" rel="stylesheet" />
+</head>
+<body>    
+    <form id="choose-storage">
+        <label for="local">Local Storage</label>
+        <input id="local" type="radio" name="storag-_type" value="local" checked="checked" />
+        <br />
+        <label for="session">Session Storage</label>
+        <input id="session" type="radio" name="storage-type" value="session" />
+    </form>
+
+    <form id="set-item">
+        <input name="key" placeholder="key" required="required" />
+        <input name="value" placeholder="value" required="required" />
+        <button type="submit">Set</button>
+    </form>
+
+    <form id="remove-item">
+        <input name="key" placeholder="key" required />
+        <button type="submit">Remove</button>
+    </form>
+
+
+    <table id="local-storage">
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="scripts/StoragesShiv.js"></script>
+</body>

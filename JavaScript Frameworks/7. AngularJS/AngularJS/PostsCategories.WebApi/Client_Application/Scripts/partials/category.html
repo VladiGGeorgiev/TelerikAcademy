@@ -1,0 +1,7 @@
+﻿<h2>Category "{{category.Name}}"
+</h2>
+<ul class="posts-list">
+	<li class="post-item" ng-repeat="post in category.Posts">
+		<a href="#/post/{{post.Id}}">{{post.Title}}</a>
+	</li>
+</ul>

@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Organiser</title>
+    <link href='styles/fullcalendar.css' rel='stylesheet' />
+    <link href='styles/meetings-styles.css' rel='stylesheet' />
+    <link href='styles/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <link rel="stylesheet" href="styles/todo-styles.css" />
+    <link href="scripts/SocialButtons/social-likes.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="/resources/demos/style.css" />-->
+</head>
+<body>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Meetings and deadlines</a></li>
+            <li><a href="#tabs-2">Todos</a></li>
+        </ul>
+        <div id="tabs-1">
+            <div id='wrap'>
+                <aside>
+                    <div id="add-miting-to-temp">
+                        <label for="temp-title">Title:</label>
+                        <input type="text" id="temp-title">
+                        <button id="add-temp-button" class='fc-state-default button'>Add to lists</button>
+                        <div>
+                            <input type="radio" name='add-to-event' id='add-to-meeting'><label for="add-to-meeting">Add to meetings</label>
+                            <input type="radio" name='add-to-event' id='add-to-deadline'><label for="add-to-deadline">Add to deadlines</label>
+                        </div>
+                    </div>
+
+                    <div id='meeting-events'>
+                        <h4>Meeting Events</h4>
+                        <div class='meeting-event draggable'>University meeting</div>
+                        <div class='meeting-event draggable'>Business meeting</div>
+                        <div class='meeting-event draggable'>Friend meeting</div>
+                        <div class='meeting-event draggable'>Interview</div>
+                        <p>
+                            <input type='checkbox' class='drop-remove' id='remove-meeting' />
+                            <label for='remove-meeting'>remove after drop</label>
+                        </p>
+                    </div>
+
+                    <div id='deadline-events'>
+                        <h4>Deadline Events</h4>
+                        <div class='deadline-event draggable'>DSA homework</div>
+                        <div class='deadline-event draggable'>JS App homework</div>
+                        <div class='deadline-event draggable'>Teamwork project</div>
+                        <p>
+                            <input type='checkbox' class='drop-remove' id='remove-deadline' />
+                            <label for='remove-deadline'>remove after drop</label>
+                        </p>
+                    </div>
+
+                    <div id="add-miting">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" /><br />
+                        <label for="datepicker">Date:</label>
+                        <input type="text" id="datepicker" />
+                        <div>
+                            <input type="radio" name='add-event' id='add-meeting'><label for="add-meeting">Meeting</label>
+                            <input type="radio" name='add-event' id='add-deadline'><label for="add-deadline">Deadline</label>
+                        </div>
+                        <button id="add-button" class='fc-state-default button'>Add</button>
+                    </div>
+                    <button class="fc-state-default button" id="save">SAVE</button>
+                </aside>
+
+                <div id='calendar'></div>
+
+                <div style='clear: both'></div>
+            </div>
+        </div>
+
+        <!-- ToDos Start: -->
+        <div id="tabs-2">
+            <label for='date'>Pick a date: </label>
+            <input type='text' id='date' />
+            <div class="enter_todo" id="enter_todo">
+                <form id="todo_form" action="index.html" method="POST">
+                    <input id="todo_description" name="todo_description" size="55" type="text" />
+                    <input id="add_todo" type="submit" value="Add" />
+                </form>
+            </div>
+            <div id='main-todo-container'>
+                <div id='todo-container'>
+                    <h1><span>ToDo<img src='styles/images/worker.png' /></span></h1>
+                </div>
+                <div id='progress-container'>
+                    <h1><span>In Progress<img src='styles/images/loading.png' /></span></h1>
+                </div>
+                <div id='done-container'>
+                    <h1><span>Done<img src='styles/images/done.png' /></span></h1>
+                </div>
+            </div>
+        </div>
+        <!-- ToDos End -->
+    </div>
+
+    <footer>
+        <ul class="social-likes">
+            <li class="facebook" title="Share link on Facebook">Facebook</li>
+            <li class="twitter" title="Share link on Twitter">Twitter</li>
+            <li class="plusone" title="Share link on Google+">Google+</li>
+        </ul>
+        <p>&copy; 2013 - Elderbery team</p>
+    </footer>
+    
+    <script src="scripts/modernizr.js"></script>
+    <script src="scripts/pie/PIE.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js'></script>
+    <script src='scripts/fullcalendar.min.js'></script>
+    <script src='scripts/web-storage-objects.js'></script>
+    <script src='scripts/meetings-main.js'></script>
+    <script src='scripts/initCalendar.js'></script>
+    <script src="scripts/todos.js"></script>
+    <script src="scripts/SocialButtons/social-likes.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+
+        toDoLists.configureDragOpitons('#todo-container', '#progress-container', '#done-container');
+        $('#date').datepicker();
+
+        //Attach event to datepicker
+        $('#date').on('change', function () {
+            var date = $('#date').datepicker('getDate');
+            toDoLists.changeDate(date);
+            $('#todo-container div').remove();
+            $('#progress-container div').remove();
+            $('#done-container div').remove();
+            toDoLists.renderToDoList();
+        });
+
+        //Attach event 'click' to addButton
+        $('#add_todo').on('click', function (e) {
+            e.preventDefault();
+            var text = $('#todo_description').val();
+            if (text) {
+                toDoLists.addToDo(text, "#todo-container");
+                $('#todo_description').val('');
+            }
+        });
+    </script>
+</body>
+</html>

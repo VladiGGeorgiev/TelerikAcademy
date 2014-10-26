@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+    <body>
+    <script src="ScriptLibraries/class.js"></script>
+    <script src="ScriptLibraries/underscore.js"></script>
+    <script>
+        var Student = Class.create({
+            init: function (firstName, lastName, marks) {
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.marks = marks;
+            },
+
+            toString: function () {
+                return this.firstName + " " + this.lastName + " -> Marks: " + this.marks;
+            }
+        });
+
+        var students = [
+            new Student("Peter", "Petrov", [2, 5, 6, 3, 2, 4, 3, 5, 6]),
+            new Student("Joro", "Minkov", [5, 4, 3, 5, 2, 3, 6, 3, 2]),
+            new Student("Angel", "Draganov", [2, 3, 3, 2, 4, 5, 6, 4, 3]),
+            new Student("Valeri", "Georgiev", [2, 3, 2, 3, 2, 3, 4, 5, 6]),
+            new Student("Minnka", "Pichkova", [6, 5, 4, 3, 5, 4, 6, 5, 4]),
+            new Student("Didka", "Venkova", [2, 3, 4, 5, 6, 5, 4, 5, 4]),
+            new Student("Ivan", "Ivanov", [6,6,6,6,6,6])
+        ];
+
+        var studentAverage = _.map(students, function(student) {
+            var studentAverage = {
+                "student": student,
+                "average": average(student.marks)
+            };
+            return studentAverage;
+        });
+        
+        function average(collection) {
+            var sum = _.reduce(collection, function(memo, mark) {
+                return memo + mark;
+            });
+            var average = sum / collection.length;
+            return average;
+        };
+
+        var maxStudent = _.max(studentAverage, function(student) {
+            return student.average;
+        });
+
+        console.log(maxStudent.student.toString());
+    </script>
+    </body>
+</html>

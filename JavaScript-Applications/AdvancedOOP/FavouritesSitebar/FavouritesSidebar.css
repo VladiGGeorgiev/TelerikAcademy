@@ -1,0 +1,37 @@
+﻿html, body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 10px;
+    list-style: none;
+}
+
+    ul li {
+        display: inline-block;
+        background-color: #ddd;
+        padding: 4px 6px;
+        position: relative;
+    }
+
+    ul > li:hover > ul {
+        display: block;
+    }
+
+    ul li a {
+        display: block;
+        text-decoration: underline;
+        color: #000;
+    }
+
+li ul {
+    display: none;
+    position: absolute;
+    top: 18px;
+    left: -10px;
+}
+
+ul li ul li {
+    display: block;
+}

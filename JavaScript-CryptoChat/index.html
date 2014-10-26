@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Vladimir Georgiev - CryptoChat</title>
+    <meta charset="utf-8" />
+    <link href="styles/styles-min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <!-- Main navigation-->
+            <nav id="nav">
+                <ul class="clear-after">
+                    <li>
+                        <a href="#" id="login-nav-btn">Login</a>
+                    </li>
+                    <li>
+                        <a href="#" id="reg-nav-btn">Register</a>
+                    </li>
+                    <li>
+                        <a href="#" id="logout-nav-btn" class="hidden">Logout</a>
+                    </li>
+                    <li>
+                        <a href="#" id="close-chat-session" class="hidden">Close chat session</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>VGeorgiev - Crypto chat</h1>
+        </header>
+        
+        <section>
+            <!-- Container with server messages and errors-->
+            <article id="info-messages">
+                <header>Information and Errors:</header>
+                <div id="info-msg-container">
+                    <p>Some information messages</p>
+                </div>
+            </article>
+
+            <!-- Container with user messages -->
+            <article id="main-content">
+                <header>Chat messages: </header>
+            </article>
+            <form id="msg">
+                <input type="text" id="input-msg" class="input" name="input" value=" " />
+                <input type="button" id="input-msg-box" class="input" name="input" value="Send" />
+            </form>
+        </section>
+        <!--List of users-->
+        <aside class="clear-after">
+            <h3>Online users:</h3>
+            <div id="users-wrapper">
+            </div>
+        </aside>
+        <footer>
+            <p><a href="http://VGeorgiev.org/">VGeorgiev</a> All rights reserved!</p>
+        </footer>
+    </div>
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha1.js"></script>
+    <script src="scripts/gibberish-aes.js"></script>
+    <script src="scripts/functions-min.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿body {
+}
+.hidden, #menu .hidden {
+    display: none;
+}
+
+#menu {
+    list-style: none;
+    float: left;
+}
+
+#menu li {
+    display: inline-block;
+}
+
+#menu li a, #second-menu li a, #todo-menu li a {
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+#menu li a:hover, #second-menu li a:hover, #todo-menu li a:hover {
+    background: #00ced1;
+    color: #fff;
+}
+
+#second-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style: none;
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+fieldset {
+    display: inline-block;
+}
+
+#second-menu #title {
+    padding: 10px;
+    font-weight: bold;
+}
+
+#todo-menu {
+    float: right;
+    margin-right: 200px;
+    list-style: none;
+}
+
+table  td, table th{
+    border: 1px solid #00ced1;
+}
+
+#appointments li {
+    display: inline-block;
+    border: 1px solid #00ced1;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#appointment li span {
+    border-bottom: 1px solid #00ced1;
+}
+
+#appointments {
+    width: 1000px;
+}
+
+#main-content a{
+    text-decoration: underline;
+}

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Favourites sitebar</title>
+    <meta charset="utf-8" />
+    <link href="FavouritesSidebar.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-2.0.2.js"></script>
+</head>
+<body>
+    <div id="wrapper"></div>
+    <script src="class-create.js"></script>
+    <script src="FavouritesSidebar.js"></script>
+    <script>
+        var url1 = new Url("VGeorgiev", "http://VGeorgiev.org/");
+        var url2 = new Url("Nakov", "http://nakov.com");
+        var url3 = new Url("NikolayIT", "http://Nikolay.IT/");
+        var url4 = new Url("Poryazov", "http://Poryazov.com/");
+        var folder1 = new Folder("Blogs", [url1, url2, url3, url4]);
+        var folder2 = new Folder("Blogs", [url1, url2, url3, url4]);
+        var folder3 = new Folder("Blogs", [url1, url2, url3, url4]);
+
+        var siteBar = new FavouriteSiteBar(
+            [folder1, folder2, folder3], [url1, url2, url3, url4]);
+        siteBar.display("wrapper");
+    </script>
+</body>
+</html>

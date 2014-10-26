@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Repository</title>
+</head>
+<body>
+    <h1>Look the console</h1>
+    <script src="object-create.js"></script>
+    <script src="School-prototypalOOP.js"></script>
+    <script>
+        var pesho = Object.create(Student);
+        pesho.init("Peter", "Petrov", 15, 3);
+        var mincho = Object.create(Teacher);
+        mincho.init("Mincho", "Hristov", 35, "Math");
+        var petrov = Object.create(Teacher);
+        petrov.init("George", "Petrov", 75, "Computer Science");
+        
+        console.log(pesho.introduce());
+        console.log(mincho.introduce());
+        console.log(petrov.introduce());
+    </script>
+</body>    
+</html>

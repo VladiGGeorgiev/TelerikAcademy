@@ -1,0 +1,26 @@
+#carousel {
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	background-image: url('images/dog.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+button {
+	background-color: #99a48a;
+	border: 1px solid #000;
+	color: #fff;
+	border-radius: 5px;
+	padding: 2px 6px;
+	box-shadow: 1px 1px 2px #888;
+
+	&:hover {
+		box-shadow: none;
+	}
+
+	&:active {
+		box-shadow: 1px 1px 2px #888 inset;
+	}
+}
+

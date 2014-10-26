@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!--
+        Write a method that from a given array of students finds all students whose first average
+        is before its last average alphabetically. 
+        Print the students in descending order by full average. Use Underscore.js
+        -->
+</head>
+<body>
+    
+    <script src="ScriptLibraries/class.js"></script>
+    <script src="ScriptLibraries/underscore.js"></script>
+    
+    <script>
+        var Student = Class.create({
+            init: function(firstName, lastName) {
+                this.firstName = firstName;
+                this.lastName = lastName;
+            },
+            
+            toString: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        });
+
+        var students = [
+            new Student("Peter", "Petrov"),
+            new Student("Joro", "Minkov"),
+            new Student("Angel", "Draganov"),
+            new Student("Valeri", "Georgiev"),
+            new Student("Minnka", "Pichkova"),
+            new Student("Didka", "Venkova")
+        ];
+
+        var filteredStudents = _.filter(students, function(student) {
+            if (student.firstName < student.lastName) {
+                return student;
+            }
+        });
+        
+        var sortedFilteredStudents = _.sortBy(filteredStudents, function(student) {
+            return student.lastName;
+        })
+
+        _.each(orderedFilteredStudents, function (student) {
+            console.log(student.toString());
+        });
+    </script>
+</body>
+</html>

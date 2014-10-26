@@ -1,0 +1,65 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="scripts/ua-parser.js"></script>
+    <script src="scripts/modernizr-latest.js"></script>
+    <script src="scripts/jquery-2.0.3.js"></script>
+</head>
+<body>
+    <div id="content"></div>
+    <div id="feautures"></div>
+    <table id="features">
+    <thead>
+        <tr>
+            <th colspan="2" class="heading">
+                <p>Your browser supports HTML5 feautures:</p>
+            </th>
+        </tr>
+        <tr>
+            <th>Feature</th>
+            <th>Supported?</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+    <script>
+        var content = document.getElementById("content");
+        var feautures = document.getElementById("feautures");
+        var parser = new UAParser();
+        var currentBrowser = parser.getBrowser();
+        var os = parser.getOS();
+        
+        content.innerHTML += "You are using: <br />"
+        content.innerHTML += "Browser: <strong>" + currentBrowser.name + " " + currentBrowser.version + "</strong><br />";
+        content.innerHTML += "OS: <strong>" + os.name + " " + os.version + "</strong><br />";
+
+        jQuery(function ($) {
+            var target = $('#features > tbody');
+
+            var traverse = function (object, prefix) {
+                prefix = prefix ? prefix + '.' : '';
+
+                for (property in object) {
+                    if (typeof object[property] == 'object') {
+                        traverse(object[property], prefix + property);
+                    } else if (typeof object[property] == 'boolean') {
+                        var
+                            tr = $('<tr />'),
+                            name = $('<th />', {
+                                text: prefix + property
+                            }),
+                            value = $('<td />', {
+                                text: object[property] ? 'Yes' : 'Nope'
+                            });
+
+                        target.append(tr.append(name).append(value));
+                    }
+                }
+            };
+
+            traverse(Modernizr, 'Modernizr');
+        });
+    </script>
+</body>
+</html>

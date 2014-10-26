@@ -1,0 +1,34 @@
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+input:checked + label {
+	text-decoration: line-through;
+}
+
+.todo label:before{
+	content: url('images/bomb.png');
+}
+.todo label {
+	display: block;
+}
+#todo-container{
+	background: url('images/paper.png') no-repeat;
+	padding-left: 100px;
+	padding-top:100px;
+	padding-right:100px;
+	height: 900px;
+	width: 520px;
+	word-wrap: break-word;
+}
+
+input#todo_description{
+	background: url('images/quill.png') no-repeat;
+	padding-left: 40px;
+}
+
+input#date{
+	background: url('images/calendarIcon.png') no-repeat;
+	padding-left: 40px;
+	height: 30px;
+}

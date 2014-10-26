@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../scripts/jquery-1.10.1.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <p>Text</p>
+    </div>
+    
+    <input type="text" name="name" id="before" value=" " />
+    <button id="before-btn">Add before</button>
+    <input type="text" name="name" id="after" value=" " />
+    <button id="after-btn">Addd after</button>
+    <script>
+        $("<p>Another before text</p>").fadeIn(2000).prependTo("#wrapper");
+        $("<p>Another text</p>").fadeIn(2000).appendTo("#wrapper");
+
+        $("#before-btn").on("click", function () {
+            var text = $("#before").val();
+            console.log(text);
+            $("<p>" + text + "</p>").fadeIn(2000).prependTo("#wrapper");
+        });
+
+        $("#after-btn").on("click", function () {
+            var text = $("#after").val();
+            console.log(text);
+            $("<p>" + text + "</p>").fadeIn(2000).appendTo("#wrapper");
+        });
+    </script>
+</body>
+</html>

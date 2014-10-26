@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Slider</title>
+    <meta charset="utf-8" />
+    <style>
+        #container {
+            max-width: 400px; 
+            border: 1px solid #000;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button id="previous">Prev</button>
+        <button id="next">Next</button>
+        <div>
+            <ul>
+                <li id="link_301135_1"><a href="http://www.btv.bg/radio">bTV Radio</a></li>
+                <li id="link_301135_2"><a href="http://www.njoybg.com/">N-JOY </a></li>
+                <li id="link_301135_3"><a href="http://zrockbg.com/">Z-Rock</a></li>
+                <li id="link_301135_4"><a href="http://www.melodybg.com/">Melody</a></li>
+                <li id="link_301135_5"><a href="http://www.classicfmsofia.com/">Classic FM</a></li>
+                <li id="link_301135_6"><a href="http://jazzfmbg.com/">Jazz FM</a></li>
+                <li id="link_301135_7"><a href="http://lounge.jazzfmbg.com/">Jazz FM Lounge</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li id="link_443066_1"><a href="http://www.ladyzone.bg/">LadyZone.bg</a></li>
+                <li id="link_443066_2"><a href="http://forum.ladyzone.bg/">Форумът на LadyZone.bg</a></li>
+                <li id="link_443066_3"><a href="http://ladyzone.bg/zdraven-blog/">Здравен блог на д-р Вергиния Николова</a></li>
+                <li id="link_443066_4"><a href="http://ladyzone.bg/dnevnikat-na-edna-maika/">Дневникът на една майка</a></li>
+                <li id="link_443066_5"><a href="http://mama.btv.bg/forum/">Форумът на mama.btv.bg</a></li>
+            </ul>
+        </div>
+        <div>
+            <img src="http://www.nasa.gov/images/content/711375main_grail20121205_4x3_946-710.jpg" alt="Alternate Text" />
+        </div>
+    </div>
+    <script src="scripts/jquery-1.10.1.js"></script>
+    <script src="scripts/ProtoClass.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script>
+        var mySlider = new Slider($("#container div"));
+
+        $("#next").on("click", function () {
+            mySlider.showNext();
+        });
+        $("#previous").on("click", function () {
+            mySlider.showPrevious();
+        });
+
+        setInterval(function () {
+            mySlider.showNext();
+        }, 2000);
+
+    </script>
+</body>
+</html>

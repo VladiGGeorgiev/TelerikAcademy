@@ -1,0 +1,24 @@
+﻿        #wrapper {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #wrapper #thumbnails img {
+            width: 80px;
+            margin: 10px 0;
+            margin-right: 4px;
+            border-radius: 3px;
+        }
+
+        #wrapper #thumbnails img:last-child {
+            margin-right: 0;
+        }
+
+        #wrapper #thumbnails img:hover {
+            box-shadow: 0 0 10px #000;
+        }
+
+
+        #wrapper #big-image img {
+            width: 500px;
+        }

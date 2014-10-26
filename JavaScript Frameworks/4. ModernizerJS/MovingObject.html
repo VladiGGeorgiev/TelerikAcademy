@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        #canvas {
+            border: 1px solid #000;
+        }
+    </style>
+    <script src="scripts/modernizr.custom.76152.js"></script>
+    <script>
+        Modernizr.load({
+            test: Modernizr.canvas,
+            nope: 'scripts/excanvas.js'
+        });
+    </script>
+</head>
+<body>
+    <button id="add-ball">Add ball</button>
+    <canvas id="canvas" width="500" height="300"></canvas>
+    <script src="scripts/MovingObject.js"></script>
+    <script>
+        bouncingBalls.addBall(10, 50, 10, 5, "#f00");
+        bouncingBalls.startGame("canvas");
+    </script>
+</body>
+</html>

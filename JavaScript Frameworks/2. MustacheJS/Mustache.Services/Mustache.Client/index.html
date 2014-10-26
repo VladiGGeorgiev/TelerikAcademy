@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+    <body>
+        <div id="content"></div>
+        <script src="Scripts/class.js"></script>
+        <script src="Scripts/jquery-2.0.3.js"></script>
+        <script src="Scripts/q.js"></script>
+        <script src="Scripts/requester.js"></script>
+        <script src="Scripts/mustache.js"></script>
+        <script src="Scripts/persister.js"></script>
+        <script src="Scripts/list-view.js"></script>
+        
+        <script type="x-student-template" id="students-template">
+            {{#students}}
+			<ul>
+                <li>{{firstName}}</li>
+                <li>{{lastName}}</li>
+                <li>{{grade}}</li>
+                <li>{{age}}</li>
+                <li class="marks">Marks
+                    <ul class="hidden">
+                        {{#marks}}
+                            <li>{{subject}}: {{score}}</li>
+                        {{/marks}}
+                        {{^marks}}
+                            <li>This student has no marks, yet</li>
+                        {{/marks}}
+                    </ul>
+                </li>
+            </ul>		
+            {{/students}}
+        </script>
+        <script src="Scripts/main.js"></script>
+    </body>
+</html>
