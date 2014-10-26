@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="4afc03ed-2138-4a61-8478-94330ac6eba6">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings>
+      <FilePath>
+        <Path>D:\PROGRAMMING\CODES\C#\ExtensionDelegatesLambdaLINQ\SetInterval\Test.cs</Path>
+        <ProjectFullName>D:\PROGRAMMING\CODES\C#\ExtensionDelegatesLambdaLINQ\SetInterval\SetInterval.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>26</Column>
+          <Text>Unknown method &lt;/C&gt;Interval&lt;//C&gt; of &lt;/C&gt;System.Timers.Timer&lt;//C&gt;</Text>
+          <Line>13</Line>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>

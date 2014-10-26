@@ -1,0 +1,6 @@
+﻿namespace BankProject
+{
+    class Bank
+    {
+    }
+}

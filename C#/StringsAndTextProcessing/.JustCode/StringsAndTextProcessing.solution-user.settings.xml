@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="bf8f1746-3c4d-4dfb-b252-35dd48d6ceb1">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings>
+      <FilePath>
+        <Path>D:\PROGRAMMING\CODES\C#\StringsAndTextProcessing\ExtractSentencesWithWord\ExtractSentencesWithWord.cs</Path>
+        <ProjectFullName>D:\PROGRAMMING\CODES\C#\StringsAndTextProcessing\ExtractSentencesWithWord\ExtractSentencesWithWord.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>1</Column>
+          <Text>This using directive is not required</Text>
+          <Line>2</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>1</Column>
+          <Text>This using directive is not required</Text>
+          <Line>4</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>1</Column>
+          <Text>This using directive is not required</Text>
+          <Line>5</Line>
+        </IgnoredElement>
+        <IgnoredElement>
+          <Column>17</Column>
+          <Text>Variable &lt;/C&gt;sentences&lt;//C&gt; is only assigned to</Text>
+          <Line>15</Line>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometricFigures", "GeometricFigures\GeometricFigures.csproj", "{AE1A7F14-B355-4062-92A3-7538FABAD89D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankProject", "BankProject\BankProject.csproj", "{0A0E17F4-67ED-4192-B0C9-838C365A5C7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Exceptions.csproj", "{4389A221-36B9-4C76-ABC2-A0A9C307ACEF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE1A7F14-B355-4062-92A3-7538FABAD89D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE1A7F14-B355-4062-92A3-7538FABAD89D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE1A7F14-B355-4062-92A3-7538FABAD89D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE1A7F14-B355-4062-92A3-7538FABAD89D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A0E17F4-67ED-4192-B0C9-838C365A5C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A0E17F4-67ED-4192-B0C9-838C365A5C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A0E17F4-67ED-4192-B0C9-838C365A5C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A0E17F4-67ED-4192-B0C9-838C365A5C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4389A221-36B9-4C76-ABC2-A0A9C307ACEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4389A221-36B9-4C76-ABC2-A0A9C307ACEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4389A221-36B9-4C76-ABC2-A0A9C307ACEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4389A221-36B9-4C76-ABC2-A0A9C307ACEF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

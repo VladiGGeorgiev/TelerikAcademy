@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumberSquareRoot", "NumberSquareRoot\NumberSquareRoot.csproj", "{678B7ABD-B7B9-409E-AC6E-016BF8D7C823}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadNumberMethod", "ReadNumberMethod\ReadNumberMethod.csproj", "{8D137285-C267-411C-96ED-642F5E14A079}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileName", "FileName\FileName.csproj", "{5F59200A-3D60-4844-8848-7EC6FBE5922D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloadFile", "DownloadFile\DownloadFile.csproj", "{AEE970A2-C2F1-413B-80C3-5717D9A217E3}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://csharp-exercises.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DownloadFile\\DownloadFile.csproj
+		SccProjectName1 = DownloadFile
+		SccLocalPath1 = DownloadFile
+		SccProjectUniqueName2 = FileName\\FileName.csproj
+		SccProjectName2 = FileName
+		SccLocalPath2 = FileName
+		SccProjectUniqueName3 = NumberSquareRoot\\NumberSquareRoot.csproj
+		SccProjectName3 = NumberSquareRoot
+		SccLocalPath3 = NumberSquareRoot
+		SccProjectUniqueName4 = ReadNumberMethod\\ReadNumberMethod.csproj
+		SccProjectName4 = ReadNumberMethod
+		SccLocalPath4 = ReadNumberMethod
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{678B7ABD-B7B9-409E-AC6E-016BF8D7C823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{678B7ABD-B7B9-409E-AC6E-016BF8D7C823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{678B7ABD-B7B9-409E-AC6E-016BF8D7C823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{678B7ABD-B7B9-409E-AC6E-016BF8D7C823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D137285-C267-411C-96ED-642F5E14A079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D137285-C267-411C-96ED-642F5E14A079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D137285-C267-411C-96ED-642F5E14A079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D137285-C267-411C-96ED-642F5E14A079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F59200A-3D60-4844-8848-7EC6FBE5922D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F59200A-3D60-4844-8848-7EC6FBE5922D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F59200A-3D60-4844-8848-7EC6FBE5922D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F59200A-3D60-4844-8848-7EC6FBE5922D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEE970A2-C2F1-413B-80C3-5717D9A217E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEE970A2-C2F1-413B-80C3-5717D9A217E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEE970A2-C2F1-413B-80C3-5717D9A217E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEE970A2-C2F1-413B-80C3-5717D9A217E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

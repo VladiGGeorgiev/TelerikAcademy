@@ -1,0 +1,12 @@
+﻿@model IEnumerable<AspForum.ViewModel.ForumPostViewModel>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@foreach (var post in Model)
+{
+    <div>
+        @post.Title (Author: @post.AuthorUsername)
+    </div>
+}
+

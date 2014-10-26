@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Canvas game development demo</title>
+    <style>
+        canvas {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background: transparent;
+        }
+
+        #background-canvas {
+            z-index: -2;
+        }
+
+        #main-canvas {
+            z-index: -1;
+        }
+
+        #player-canvas {
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="background-canvas" width="600" height="400">
+        Browser does not support canvas.
+    </canvas>
+    <canvas id="main-canvas" width="600" height="400"></canvas>
+    <canvas id="player-canvas" width="600" height="400"></canvas>
+
+    <script src="components.js"></script>
+    <script src="interfaces.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

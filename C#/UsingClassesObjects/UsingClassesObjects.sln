@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckIsLeapYear", "CheckIsLeapYear\CheckIsLeapYear.csproj", "{D6BA39E6-61C4-460C-A195-B1957B943ADC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomNumbers", "RandomNumbers\RandomNumbers.csproj", "{6E2D2F28-C40A-4E00-9908-3905C5F27656}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintDayOfWeek", "PrintDayOfWeek\PrintDayOfWeek.csproj", "{FD7E2628-C488-4505-9E56-685AA374075E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleSurface", "TriangleSurface\TriangleSurface.csproj", "{C6EBCFF7-70A1-44A1-9ECB-F83025A12A7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workdays", "Workdays\Workdays.csproj", "{915B0BF3-5465-4B1C-A9EC-6855AEDBB917}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumStringNumbers", "SumStringNumbers\SumStringNumbers.csproj", "{37AEF5CA-9BBE-4327-93F3-B64835247132}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://csharp-exercises.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CheckIsLeapYear\\CheckIsLeapYear.csproj
+		SccProjectName1 = CheckIsLeapYear
+		SccLocalPath1 = CheckIsLeapYear
+		SccProjectUniqueName2 = PrintDayOfWeek\\PrintDayOfWeek.csproj
+		SccProjectName2 = PrintDayOfWeek
+		SccLocalPath2 = PrintDayOfWeek
+		SccProjectUniqueName3 = RandomNumbers\\RandomNumbers.csproj
+		SccProjectName3 = RandomNumbers
+		SccLocalPath3 = RandomNumbers
+		SccProjectUniqueName4 = SumStringNumbers\\SumStringNumbers.csproj
+		SccProjectName4 = SumStringNumbers
+		SccLocalPath4 = SumStringNumbers
+		SccProjectUniqueName5 = TriangleSurface\\TriangleSurface.csproj
+		SccProjectName5 = TriangleSurface
+		SccLocalPath5 = TriangleSurface
+		SccProjectUniqueName6 = Workdays\\Workdays.csproj
+		SccProjectName6 = Workdays
+		SccLocalPath6 = Workdays
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6BA39E6-61C4-460C-A195-B1957B943ADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6BA39E6-61C4-460C-A195-B1957B943ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6BA39E6-61C4-460C-A195-B1957B943ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6BA39E6-61C4-460C-A195-B1957B943ADC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E2D2F28-C40A-4E00-9908-3905C5F27656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E2D2F28-C40A-4E00-9908-3905C5F27656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E2D2F28-C40A-4E00-9908-3905C5F27656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E2D2F28-C40A-4E00-9908-3905C5F27656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD7E2628-C488-4505-9E56-685AA374075E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD7E2628-C488-4505-9E56-685AA374075E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD7E2628-C488-4505-9E56-685AA374075E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD7E2628-C488-4505-9E56-685AA374075E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6EBCFF7-70A1-44A1-9ECB-F83025A12A7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6EBCFF7-70A1-44A1-9ECB-F83025A12A7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6EBCFF7-70A1-44A1-9ECB-F83025A12A7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6EBCFF7-70A1-44A1-9ECB-F83025A12A7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{915B0BF3-5465-4B1C-A9EC-6855AEDBB917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{915B0BF3-5465-4B1C-A9EC-6855AEDBB917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{915B0BF3-5465-4B1C-A9EC-6855AEDBB917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{915B0BF3-5465-4B1C-A9EC-6855AEDBB917}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37AEF5CA-9BBE-4327-93F3-B64835247132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37AEF5CA-9BBE-4327-93F3-B64835247132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37AEF5CA-9BBE-4327-93F3-B64835247132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37AEF5CA-9BBE-4327-93F3-B64835247132}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

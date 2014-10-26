@@ -1,0 +1,108 @@
+﻿body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+/* styles for removing the background from form */
+.no-color {
+    background-color: white;
+    border-style: none;
+}
+
+.boldText {
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.profileImage {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+}
+
+.groupsGrid {
+    text-align: center;
+}
+
+    .groupsGrid td, th {
+        padding: 5px;
+    }
+
+#all-user-profiles {
+    list-style: none;
+}
+
+    #all-user-profiles li {
+        display: inline-block;
+        border: 2px solid #808080;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+        #all-user-profiles li .full-name, #all-user-profiles li img {
+            text-align: center;
+        }
+
+input[type=image] {
+    display: inline-block;
+    margin: 5px;
+    height: 25px;
+    width: 25px;
+    float: right;
+}
+
+.skillsLines {
+    height: 50px;
+}
+
+.AllGroupMessages {
+    height: 280px;
+    width: 290px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border: 1px solid #e2e2e2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.GroupMessage {
+    border: 2px solid #808080;
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.GroupMessageContent {
+    color: #ff6a00;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.GroupMessageDateCreated {
+    font-size: 10px;
+    text-align: right;
+}
+
+.GroupMessageUserName {
+    text-align: right;
+}
+
+.addSkillForm {
+    margin: 20px;
+    padding: 20px;
+}
+
+.skillInfo {
+    width: 200px;
+    display: inline-block;
+}
+
+.endorceBtn, .showHideBtn, .addSkillBtn, .skillsList {
+    margin: 15px;
+}
+
+.avatarImg {
+    width: 100px;
+    height: 100px;
+}
