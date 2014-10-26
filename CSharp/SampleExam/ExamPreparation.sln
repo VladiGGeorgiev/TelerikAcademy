@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartesianCoordinateSystem", "CartesianCoordinateSystem\CartesianCoordinateSystem.csproj", "{A3DF8B0F-497F-4AE0-861C-354FBF992A08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissCat", "MissCat\MissCat.csproj", "{42D09131-C6FB-4A20-9008-52FABEB534D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForestRoad", "ForestRoad\ForestRoad.csproj", "{B2D5C54A-38F5-4FE9-8E27-E3C670D6545E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryDigitsCount", "BinaryDigitsCount\BinaryDigitsCount.csproj", "{4C8EED06-1A3B-416A-A329-FB6A512317D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubsetSums", "SubsetSums\SubsetSums.csproj", "{2A888A0A-8B09-4C35-ADE5-FCE79289997D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://csharp-exercises.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BinaryDigitsCount\\BinaryDigitsCount.csproj
+		SccProjectName1 = BinaryDigitsCount
+		SccLocalPath1 = BinaryDigitsCount
+		SccProjectUniqueName2 = CartesianCoordinateSystem\\CartesianCoordinateSystem.csproj
+		SccProjectName2 = CartesianCoordinateSystem
+		SccLocalPath2 = CartesianCoordinateSystem
+		SccProjectUniqueName3 = ForestRoad\\ForestRoad.csproj
+		SccProjectName3 = ForestRoad
+		SccLocalPath3 = ForestRoad
+		SccProjectUniqueName4 = MissCat\\MissCat.csproj
+		SccProjectName4 = MissCat
+		SccLocalPath4 = MissCat
+		SccProjectUniqueName5 = SubsetSums\\SubsetSums.csproj
+		SccProjectName5 = SubsetSums
+		SccLocalPath5 = SubsetSums
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3DF8B0F-497F-4AE0-861C-354FBF992A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3DF8B0F-497F-4AE0-861C-354FBF992A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3DF8B0F-497F-4AE0-861C-354FBF992A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3DF8B0F-497F-4AE0-861C-354FBF992A08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42D09131-C6FB-4A20-9008-52FABEB534D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42D09131-C6FB-4A20-9008-52FABEB534D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42D09131-C6FB-4A20-9008-52FABEB534D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42D09131-C6FB-4A20-9008-52FABEB534D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2D5C54A-38F5-4FE9-8E27-E3C670D6545E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2D5C54A-38F5-4FE9-8E27-E3C670D6545E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2D5C54A-38F5-4FE9-8E27-E3C670D6545E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2D5C54A-38F5-4FE9-8E27-E3C670D6545E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C8EED06-1A3B-416A-A329-FB6A512317D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C8EED06-1A3B-416A-A329-FB6A512317D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C8EED06-1A3B-416A-A329-FB6A512317D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C8EED06-1A3B-416A-A329-FB6A512317D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A888A0A-8B09-4C35-ADE5-FCE79289997D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A888A0A-8B09-4C35-ADE5-FCE79289997D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A888A0A-8B09-4C35-ADE5-FCE79289997D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A888A0A-8B09-4C35-ADE5-FCE79289997D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripleRotationOfDigits", "TripleRotationOfDigits\TripleRotationOfDigits.csproj", "{723A4F28-CE36-4B53-9A2F-71EF2C28C643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UKFlag", "UKFlag\UKFlag.csproj", "{27E5B1C2-8700-4ADA-9692-FD1C317B2322}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadronacciRectangle", "QuadronacciRectangle\QuadronacciRectangle.csproj", "{C31FF29D-B02D-46F5-9FFA-9869F4F0E33F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poker", "Poker\Poker.csproj", "{9F4DC1DA-8119-4F45-9047-50CE7CA9FF34}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://csharp-exercises.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Poker\\Poker.csproj
+		SccProjectName1 = Poker
+		SccLocalPath1 = Poker
+		SccProjectUniqueName2 = QuadronacciRectangle\\QuadronacciRectangle.csproj
+		SccProjectName2 = QuadronacciRectangle
+		SccLocalPath2 = QuadronacciRectangle
+		SccProjectUniqueName3 = TripleRotationOfDigits\\TripleRotationOfDigits.csproj
+		SccProjectName3 = TripleRotationOfDigits
+		SccLocalPath3 = TripleRotationOfDigits
+		SccProjectUniqueName4 = UKFlag\\UKFlag.csproj
+		SccProjectName4 = UKFlag
+		SccLocalPath4 = UKFlag
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{723A4F28-CE36-4B53-9A2F-71EF2C28C643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{723A4F28-CE36-4B53-9A2F-71EF2C28C643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{723A4F28-CE36-4B53-9A2F-71EF2C28C643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{723A4F28-CE36-4B53-9A2F-71EF2C28C643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27E5B1C2-8700-4ADA-9692-FD1C317B2322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27E5B1C2-8700-4ADA-9692-FD1C317B2322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27E5B1C2-8700-4ADA-9692-FD1C317B2322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27E5B1C2-8700-4ADA-9692-FD1C317B2322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C31FF29D-B02D-46F5-9FFA-9869F4F0E33F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C31FF29D-B02D-46F5-9FFA-9869F4F0E33F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C31FF29D-B02D-46F5-9FFA-9869F4F0E33F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C31FF29D-B02D-46F5-9FFA-9869F4F0E33F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F4DC1DA-8119-4F45-9047-50CE7CA9FF34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F4DC1DA-8119-4F45-9047-50CE7CA9FF34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F4DC1DA-8119-4F45-9047-50CE7CA9FF34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F4DC1DA-8119-4F45-9047-50CE7CA9FF34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathExpression", "MathExpression\MathExpression.csproj", "{08C66160-77B6-49ED-8D33-B765F441BFC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeastMajorityMultiple", "LeastMajorityMultiple\LeastMajorityMultiple.csproj", "{E0A3858E-D0D1-4549-9B8C-590950ACE331}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trapezoid", "Trapezoid\Trapezoid.csproj", "{4C8311F2-8327-40B7-A455-4FF6FC05B4A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddNumber", "OddNumber\OddNumber.csproj", "{61215E50-51B6-439B-9CFB-E5F47CBF814B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://csharp-exercises.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = LeastMajorityMultiple\\LeastMajorityMultiple.csproj
+		SccProjectName1 = LeastMajorityMultiple
+		SccLocalPath1 = LeastMajorityMultiple
+		SccProjectUniqueName2 = MathExpression\\MathExpression.csproj
+		SccProjectName2 = MathExpression
+		SccLocalPath2 = MathExpression
+		SccProjectUniqueName3 = OddNumber\\OddNumber.csproj
+		SccProjectName3 = OddNumber
+		SccLocalPath3 = OddNumber
+		SccProjectUniqueName4 = Trapezoid\\Trapezoid.csproj
+		SccProjectName4 = Trapezoid
+		SccLocalPath4 = Trapezoid
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08C66160-77B6-49ED-8D33-B765F441BFC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C66160-77B6-49ED-8D33-B765F441BFC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C66160-77B6-49ED-8D33-B765F441BFC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C66160-77B6-49ED-8D33-B765F441BFC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A3858E-D0D1-4549-9B8C-590950ACE331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A3858E-D0D1-4549-9B8C-590950ACE331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A3858E-D0D1-4549-9B8C-590950ACE331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A3858E-D0D1-4549-9B8C-590950ACE331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C8311F2-8327-40B7-A455-4FF6FC05B4A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C8311F2-8327-40B7-A455-4FF6FC05B4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C8311F2-8327-40B7-A455-4FF6FC05B4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C8311F2-8327-40B7-A455-4FF6FC05B4A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61215E50-51B6-439B-9CFB-E5F47CBF814B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61215E50-51B6-439B-9CFB-E5F47CBF814B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61215E50-51B6-439B-9CFB-E5F47CBF814B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61215E50-51B6-439B-9CFB-E5F47CBF814B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

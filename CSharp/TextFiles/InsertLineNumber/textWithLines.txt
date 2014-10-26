@@ -1,0 +1,16 @@
+1. The Internet protocol suite is the
+2. set of communications protocols used
+3. for the Internet and similar networks,
+4. and generally the most popular
+5. protocol stack for wide area networks. 
+6. It is commonly known as TCP/IP,
+7. because of its most important protocols:
+8. Transmission Control Protocol 
+9. (TCP) and Internet Protocol (IP), which 
+10. were the first networking 
+11. protocols defined in this standard. 
+12. It is occasionally known as the DoD 
+13. model due to the foundational 
+14. influence of the ARPANET in the 1970s 
+15. (operated by DARPA, an agency of the 
+16. United States Department of Defense).

@@ -1,0 +1,16 @@
+The Internet protocol suite is the
+set of communications protocols used
+for the Internet and similar networks,
+and generally the most popular
+protocol stack for wide area networks. 
+It is commonly known as TCP/IP,
+because of its most important protocols:
+Transmission Control Protocol 
+(TCP) and Internet Protocol (IP), which 
+were the first networking 
+protocols defined in this standard. 
+It is occasionally known as the DoD 
+model due to the foundational 
+influence of the ARPANET in the 1970s 
+(operated by DARPA, an agency of the 
+United States Department of Defense).

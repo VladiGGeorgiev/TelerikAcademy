@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="681ebeb0-9321-447a-8c5f-dd74ed68f7dd">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings>
+      <FilePath>
+        <Path>D:\PROGRAMMING\CODES\C#\MultidimentionalArrays\MaxSquareSum\MaxSquareSum.cs</Path>
+        <ProjectFullName>D:\PROGRAMMING\CODES\C#\MultidimentionalArrays\MaxSquareSum\MaxSquareSum.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>31</Column>
+          <Text>Unexpected end of statement</Text>
+          <Line>14</Line>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>

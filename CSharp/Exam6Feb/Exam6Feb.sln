@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhpVariables", "PhpVariables\PhpVariables.csproj", "{DCE29AB2-C55B-4190-AF21-C4436ED39066}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SevenSegmentDisplay", "SevenSegmentDisplay\SevenSegmentDisplay.csproj", "{8FCC7E33-4DAC-49DE-B090-C0182D26B565}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tubes", "Tubes\Tubes.csproj", "{D8ABA897-40BF-4283-8A02-88E25A6B5316}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DStar", "3DStar\3DStar.csproj", "{AA40B4A3-AA8F-4B5A-929A-021724BE799E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Brackets", "Brackets\Brackets.csproj", "{6B26057F-FEA5-4A89-83D1-B2BA51D2E7C1}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://csharp-exercises.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = 3DStar\\3DStar.csproj
+		SccProjectName1 = 3DStar
+		SccLocalPath1 = 3DStar
+		SccProjectUniqueName2 = Brackets\\Brackets.csproj
+		SccProjectName2 = Brackets
+		SccLocalPath2 = Brackets
+		SccProjectUniqueName3 = PhpVariables\\PhpVariables.csproj
+		SccProjectName3 = PhpVariables
+		SccLocalPath3 = PhpVariables
+		SccProjectUniqueName4 = SevenSegmentDisplay\\SevenSegmentDisplay.csproj
+		SccProjectName4 = SevenSegmentDisplay
+		SccLocalPath4 = SevenSegmentDisplay
+		SccProjectUniqueName5 = Tubes\\Tubes.csproj
+		SccProjectName5 = Tubes
+		SccLocalPath5 = Tubes
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCE29AB2-C55B-4190-AF21-C4436ED39066}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCE29AB2-C55B-4190-AF21-C4436ED39066}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCE29AB2-C55B-4190-AF21-C4436ED39066}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCE29AB2-C55B-4190-AF21-C4436ED39066}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FCC7E33-4DAC-49DE-B090-C0182D26B565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FCC7E33-4DAC-49DE-B090-C0182D26B565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FCC7E33-4DAC-49DE-B090-C0182D26B565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FCC7E33-4DAC-49DE-B090-C0182D26B565}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8ABA897-40BF-4283-8A02-88E25A6B5316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8ABA897-40BF-4283-8A02-88E25A6B5316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8ABA897-40BF-4283-8A02-88E25A6B5316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8ABA897-40BF-4283-8A02-88E25A6B5316}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA40B4A3-AA8F-4B5A-929A-021724BE799E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA40B4A3-AA8F-4B5A-929A-021724BE799E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA40B4A3-AA8F-4B5A-929A-021724BE799E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA40B4A3-AA8F-4B5A-929A-021724BE799E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B26057F-FEA5-4A89-83D1-B2BA51D2E7C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B26057F-FEA5-4A89-83D1-B2BA51D2E7C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B26057F-FEA5-4A89-83D1-B2BA51D2E7C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B26057F-FEA5-4A89-83D1-B2BA51D2E7C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

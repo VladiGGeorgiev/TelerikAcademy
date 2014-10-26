@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Slices3D", "Slices3D\Slices3D.csproj", "{C8911769-4F26-4389-AE4D-08194B88DE8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BottleMessages", "BottleMessages\BottleMessages.csproj", "{E4FC711B-1487-406F-96B0-FAB2D49AF057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicLanguage", "BasicLanguage\BasicLanguage.csproj", "{52EF6498-4116-49DB-9A53-0F9CE0D2C0C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cooking", "Cooking\Cooking.csproj", "{3753ADE2-787F-4450-8062-FD092416DB55}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://csharp-exercises.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BasicLanguage\\BasicLanguage.csproj
+		SccProjectName1 = BasicLanguage
+		SccLocalPath1 = BasicLanguage
+		SccProjectUniqueName2 = BottleMessages\\BottleMessages.csproj
+		SccProjectName2 = BottleMessages
+		SccLocalPath2 = BottleMessages
+		SccProjectUniqueName3 = Cooking\\Cooking.csproj
+		SccProjectName3 = Cooking
+		SccLocalPath3 = Cooking
+		SccProjectUniqueName4 = Slices3D\\Slices3D.csproj
+		SccProjectName4 = Slices3D
+		SccLocalPath4 = Slices3D
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8911769-4F26-4389-AE4D-08194B88DE8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8911769-4F26-4389-AE4D-08194B88DE8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8911769-4F26-4389-AE4D-08194B88DE8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8911769-4F26-4389-AE4D-08194B88DE8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4FC711B-1487-406F-96B0-FAB2D49AF057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4FC711B-1487-406F-96B0-FAB2D49AF057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4FC711B-1487-406F-96B0-FAB2D49AF057}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4FC711B-1487-406F-96B0-FAB2D49AF057}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52EF6498-4116-49DB-9A53-0F9CE0D2C0C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52EF6498-4116-49DB-9A53-0F9CE0D2C0C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52EF6498-4116-49DB-9A53-0F9CE0D2C0C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52EF6498-4116-49DB-9A53-0F9CE0D2C0C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3753ADE2-787F-4450-8062-FD092416DB55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3753ADE2-787F-4450-8062-FD092416DB55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3753ADE2-787F-4450-8062-FD092416DB55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3753ADE2-787F-4450-8062-FD092416DB55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
