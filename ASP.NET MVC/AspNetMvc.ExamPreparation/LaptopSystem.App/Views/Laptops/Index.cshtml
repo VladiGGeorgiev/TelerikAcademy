@@ -1,0 +1,66 @@
+﻿@model IEnumerable<LaptopSystem.App.ViewModels.LaptopViewModel>
+<h1>Laptops</h1>        
+<h3>Search</h3>
+
+@using (Html.BeginForm("Search", "Laptops", FormMethod.Post))
+{
+    @(Html.Kendo().DropDownList().Name("ManufacturerSearchText")
+    .OptionLabel("Select manufacturer")
+    .DataTextField("Title")
+    .DataValueField("Id")
+    .DataSource(data =>
+    {
+        data.Read(read =>
+        {
+            read.Action("GetDropdownManufacturers", "Laptops");
+        })
+        .ServerFiltering(true);
+    }))
+    <br/>
+    @(Html.Kendo().AutoComplete().Name("ModelSearchText")
+        .MinLength(3)
+        .Filter("contains")
+        .Placeholder("Enter model")
+        .DataTextField("Model")
+        .DataSource(source => {
+                  source.Read(read =>
+                  {
+                      read.Action("SearchAutocompleteModel", "Laptops")
+                          .Data("onAdditionalData");
+                  })
+                  .ServerFiltering(true);
+        }))
+    <br/>
+    @Html.Kendo().NumericTextBox().Max(10000).Min(100).Name("PriceNumeric")
+    <br />
+    <br/>
+    <input type="submit" class="btn" name="name" value="Search" />
+}
+
+@(Html.Kendo().ListView<LaptopSystem.App.ViewModels.LaptopViewModel>().Name("LaptopsListView")
+    .TagName("div")
+    .ClientTemplateId("laptops-template")
+    .DataSource(dataSource =>
+    {
+        dataSource.Read(read => read.Action("GetLaptops", "Laptops"));
+        dataSource.ServerOperation(true);
+        dataSource.PageSize(5);
+    })
+    .Pageable()
+)
+
+<script type="text/x-kendo-tmpl" id="laptops-template">
+    <div class="product">
+        <img src="#:ImageUrl#" alt="#:Model#" />
+        <h3>#:Manufacturer # #: Model#</h3>
+        <p><a href="/Laptops/Details/#:Id#" class="btn">#:Price#</a></p>
+    </div>
+</script>
+
+<script>
+    function onAdditionalData() {
+        return {
+            text: $('#ModelSearchText').val(),
+        };
+    }
+</script>

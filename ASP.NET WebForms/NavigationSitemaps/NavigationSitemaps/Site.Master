@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="NavigationSitemaps.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Navigation and Sitemaps</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Site.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="MainForm" runat="server">
+    <div class="page">
+        <div class="title">
+            <h1>Sitemap and navigation exercise</h1>
+        </div>
+        <div class="loginDisplay">
+        </div>
+        <div class="clear hideSkiplink">
+            <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" SkipLinkText=""
+                EnableViewState="False" IncludeStyleBlock="False" Orientation="Horizontal" 
+                DataSourceID="SiteMapDataSource" StaticDisplayLevels="2">
+            </asp:Menu>
+            <asp:SiteMapPath ID="SiteMapPathBreadcrump" runat="server" />
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">Telerik Academy, 2013</div>
+    </div>
+    </form>
+    <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" />
+</body>
+</html>

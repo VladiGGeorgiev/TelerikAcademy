@@ -1,0 +1,16 @@
+﻿@using Kendo.Mvc.UI
+@model IEnumerable<LaptopSystem.App.ViewModels.LaptopViewModel>
+@{
+    ViewBag.Title = "Home Page";  
+}
+<h1>Laptop System</h1>
+<div class="row">
+    @foreach (var laptop in Model)
+    {
+        <div class="span4">
+            <h3>@laptop.Manufacturer @laptop.Model</h3>
+            <div><img src="@laptop.ImageUrl" alt="Alternate Text" /></div>
+            <a href="/Laptops/Details/@laptop.Id" class="btn">Price @laptop.Price</a>
+        </div>
+    }
+</div>

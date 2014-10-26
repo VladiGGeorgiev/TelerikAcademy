@@ -1,0 +1,68 @@
+﻿@model IEnumerable<Ajax.Models.Movie>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Ajax.ActionLink("Create New", "Create",  new AjaxOptions()
+            {
+                InsertionMode = InsertionMode.Replace,
+                UpdateTargetId = "partial-container",
+                HttpMethod = "GET"
+            })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Director)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Director)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Year)
+        </td>
+        <td>
+            @Ajax.ActionLink("Edit", "Edit", new { id = item.MovieId }, new AjaxOptions()
+            {
+                InsertionMode = InsertionMode.Replace,
+                UpdateTargetId = "partial-container",
+                HttpMethod = "GET",
+
+            }) |
+            @Ajax.ActionLink("Details", "Details", new { id=item.MovieId }, new AjaxOptions()
+            {
+                InsertionMode = InsertionMode.Replace,
+                UpdateTargetId = "partial-container",
+                HttpMethod = "GET"
+            }) |
+            @Ajax.ActionLink("Delete", "Delete", new { id = item.MovieId }, new AjaxOptions()
+            {
+                InsertionMode = InsertionMode.Replace,
+                UpdateTargetId = "partial-container",
+                HttpMethod = "GET"
+            }))
+        </td>
+    </tr>
+}
+
+</table>
+
+<div id="partial-container"></div>

@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="InternationalCompany.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="styles/site.css" rel="stylesheet" />
+</head>
+<body>
+    <header id="header">
+        <h1>International Company</h1>
+    </header>
+    <aside id="sidebar">
+        <asp:ContentPlaceHolder ID="MenuPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </aside>
+    <section id="content">
+        <asp:ContentPlaceHolder ID="MainPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </section>
+    <footer id="footer">
+        <p>(c) International Company Corp. 2013</p> 
+    </footer>
+</body>
+</html>

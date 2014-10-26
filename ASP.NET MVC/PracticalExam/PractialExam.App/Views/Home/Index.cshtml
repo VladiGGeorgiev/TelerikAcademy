@@ -1,0 +1,14 @@
+﻿@model IEnumerable<PractialExam.App.ViewModels.TicketViewModel>
+
+<div class="row">
+    @foreach (var ticket in Model)
+    {
+        <div class="span4">
+            <h2>@ticket.Title</h2>
+            <div><strong>Category: </strong>@ticket.CategoryName</div>
+            <div><strong>Author: </strong>@ticket.AuthorName</div>
+            <div>@ticket.CommentsNumber comment(s)</div>
+            <a class="btn" href="/Tickets/Details/@ticket.Id">More details...</a>
+        </div>
+    }
+</div>

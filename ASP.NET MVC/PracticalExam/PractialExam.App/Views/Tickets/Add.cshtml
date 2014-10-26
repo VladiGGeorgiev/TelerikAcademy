@@ -1,0 +1,34 @@
+﻿@model PractialExam.App.Models.AddTicketModel
+<h1>Ticketing System</h1>
+<h2>Add ticket</h2>
+
+<div id="add-ticket-form">
+    
+    @using (Html.BeginForm("Add", "Tickets", FormMethod.Post))
+    {
+        <label for="Category">Category</label>
+        @(Html.Kendo().DropDownList().Name("Category")
+            .DataValueField("Id")
+            .DataTextField("Name")
+            .BindTo(ViewBag.Categories))
+        
+        <br />
+        
+        <label for="Title">Title</label>
+        @Html.TextBoxFor(x => x.Title)
+        @Html.ValidationMessageFor(x => x.Title)
+        <br />
+        <label for="Priority">Priority</label>
+        @(Html.Kendo().DropDownList().Name("Priority")
+          .BindTo(ViewBag.Priorities))
+        @Html.ValidationMessageFor(x => x.Priority)
+        <br />
+        <label for="ScreenshotUrl">ScreenshotUrl</label>
+        @Html.TextBoxFor(x => x.ScreenshotUrl)
+        <br />
+        <label for="Description">Description</label>
+        @Html.TextBoxFor(x => x.Description)
+        <br/>
+    <input class="btn" type="submit" name="name" value="Add ticket" />
+    }
+</div>

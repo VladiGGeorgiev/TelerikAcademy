@@ -1,0 +1,20 @@
+﻿@model System.Linq.IQueryable<PractialExam.App.ViewModels.TicketViewModel>
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>Search results for category: <em>@ViewBag.Category</em></h2>
+
+<div class="row">
+    @foreach (var ticket in Model)
+    {
+        <div class="span4">
+            <h2>@ticket.Title</h2>
+            <div><strong>Category: </strong>@ticket.CategoryName</div>
+            <div><strong>Author: </strong>@ticket.AuthorName</div>
+            <div>@ticket.CommentsNumber comment(s)</div>
+            <a class="btn" href="/Tickets/Details/@ticket.Id">More details...</a>
+        </div>
+    }
+</div>

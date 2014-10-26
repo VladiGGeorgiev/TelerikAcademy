@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1,2.RandomNumbersGenerator", "RandomNumbersGenerator\1,2.RandomNumbersGenerator.csproj", "{82FDC9E6-4C30-48D5-8C01-4BFFDD5EEE08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.EscapingTask", "EscapingTask\3.EscapingTask.csproj", "{487541F6-C133-493F-A2F3-8B39DEF0A1BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.StudentsRegistration", "StudentsRegistration\4.StudentsRegistration.csproj", "{1DD60CFB-83C9-4E3A-B0E5-E632DD556A70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82FDC9E6-4C30-48D5-8C01-4BFFDD5EEE08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82FDC9E6-4C30-48D5-8C01-4BFFDD5EEE08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82FDC9E6-4C30-48D5-8C01-4BFFDD5EEE08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82FDC9E6-4C30-48D5-8C01-4BFFDD5EEE08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{487541F6-C133-493F-A2F3-8B39DEF0A1BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{487541F6-C133-493F-A2F3-8B39DEF0A1BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{487541F6-C133-493F-A2F3-8B39DEF0A1BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{487541F6-C133-493F-A2F3-8B39DEF0A1BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DD60CFB-83C9-4E3A-B0E5-E632DD556A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD60CFB-83C9-4E3A-B0E5-E632DD556A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD60CFB-83C9-4E3A-B0E5-E632DD556A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD60CFB-83C9-4E3A-B0E5-E632DD556A70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

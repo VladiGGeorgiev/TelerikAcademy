@@ -1,0 +1,37 @@
+﻿@using Kendo.Mvc.UI.Fluent
+@model IEnumerable<TreeViewItemModel>
+@{
+    ViewBag.Title = "Home Page";  
+}
+
+<div class="row">
+    @using (Html.BeginForm("Search", "Books", FormMethod.Get))
+    {
+        @(Html.Kendo().AutoComplete()
+          .Name("query")
+          .Filter("contains")
+          .Placeholder("Search book...")
+          .BindTo(ViewBag.BookTitles))
+        <input type="submit" class="btn btn-info" value="Search" />
+    }  
+    <div class="demo-section">
+        @Html.Kendo().TreeView().Name("treeview-left").BindTo(Model)
+    </div>
+</div>
+<style scoped>
+    #example {
+        text-align: center;
+    }
+
+    .demo-section {
+        display: inline-block;
+        vertical-align: top;
+        width: 220px;
+        text-align: left;
+        margin: 0 2em;
+    }
+
+    .k-widget {
+        color: #000;
+    }
+</style>

@@ -1,0 +1,71 @@
+﻿@using PractialExam.App.ViewModels
+@model IEnumerable<PractialExam.App.ViewModels.TicketListViewModel>
+
+<h1>Tickets list</h1>
+@using (Html.BeginForm("Search", "Tickets", FormMethod.Get))
+{
+@(Html.Kendo().DropDownList().Name("Search")
+    .OptionLabel("Select category")
+        .DataTextField("CategoryName")
+        .DataValueField("CategoryId")
+        .DataSource(source => {
+            source.Read(read =>
+            {
+                read.Action("GetCategories", "Tickets");
+            })
+        .ServerFiltering(true);
+           
+        }))
+
+    <input type="submit" class="btn" name="name" value="Search" />
+}
+<br />
+<br />
+<div id="listViewTitles" class="row-fluid">
+    <div class="span3">
+        <h3>Title</h3>
+    </div>
+    <div class="span3">
+        <h3>CategoryName</h3>
+    </div>
+    <div class="span3">
+        <h3>AuthorName</h3>
+    </div>
+    <div class="span2">
+        <h3>Priority</h3>
+    </div>
+    <div class="span1">
+        <h3>Link</h3>
+    </div>
+</div>
+@(Html.Kendo().ListView<TicketListViewModel>(Model)
+    .Name("listView")
+    .TagName("div")
+    .ClientTemplateId("template")
+    .DataSource(dataSource =>
+    {
+        dataSource.Read(read => read.Action("TicketsRead", "Tickets"));
+        dataSource.PageSize(5);
+    })
+    .Pageable()
+)
+
+<script type="text/x-kendo-tmpl" id="template">
+    <div class="row-fluid products">
+        <div class="span3">
+            <span>#:Title#</span>
+        </div>
+        <div class="span3">
+            <span>#:CategoryName#</span>
+        </div>
+        <div class="span3">
+            <span>#:AuthorName#</span>
+        </div>
+        <div class="span2">
+            <span>#:Priority#</span>
+        </div>
+        <div class="span1">
+            <span><a class="btn" href="/Tickets/Details/#:Id#">Details</a></span>
+        </div>
+    </div>
+</script>

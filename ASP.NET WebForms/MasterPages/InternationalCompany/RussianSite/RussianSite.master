@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RussianSite.master.cs" Inherits="InternationalCompany.RussianSiteMaster" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content runat="server" ContentPlaceHolderID="MenuPlaceHolder">
+    <div class="sidebar-title">Menu</div>
+    <ul>
+        <li><a id="A1" href="~/EnglishSite/Home.aspx" runat="server">Английский сайт</a></li>
+        <li><a id="A2" href="~/BulgarianSite/Home.aspx" runat="server">Болгарский сайт</a></li>
+        <li><a id="A3" href="~/RussianSite/Home.aspx" runat="server">Русский сайт</a></li>
+    </ul>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="MainPlaceHolder" runat="server">
+    <div class="sidebar-title">Menu</div>
+    <ul>
+        <li><a id="A4" href="~/RussianSite/Home.aspx" runat="server">Дома</a></li>
+        <li><a id="A5" href="~/RussianSite/About.aspx" runat="server">О компании</a></li>
+        <li><a id="A6" href="~/RussianSite/Contacts.aspx" runat="server">Связи</a></li>
+    </ul>
+    <asp:ContentPlaceHolder runat="server" ID="RissuanSitePlaceHolder"></asp:ContentPlaceHolder>
+</asp:Content>

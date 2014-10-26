@@ -1,0 +1,24 @@
+﻿@model List<BookSystem.Models.Category>
+
+@{
+    ViewBag.Title = "Edit Categories";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit Categories</h2>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Action</th>
+    </tr>
+    @foreach (var category in Model)
+    {
+        <tr>
+            <td>@category.Title</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", "Categories", new { id = category.CategoryId }, null)
+                @Html.ActionLink("Delete", "Delete", "Categories", new { id = category.CategoryId }, null )
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,27 @@
+﻿@model IEnumerable<BookSystem.Models.Book>
+
+@{
+    ViewBag.Title = "Book Details";
+}
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Action</th>
+    </tr>
+    @foreach (var book in Model)
+    {
+        <tr>
+            <td>@book.Title</td>
+            <td>Author: <strong>@book.Author</strong></td>
+            <td>Category: <strong>@book.Category.Title</strong></td>
+            <td>WebSite: <strong>@book.WebSite</strong></td>
+            <td>ISBN: <strong>@book.ISBN</strong></td>
+            <td>Description: <strong>@book.Description</strong></td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", "Books", new { id = book.BookId }, null)
+                @Html.ActionLink("Delete", "Delete", "Books", new { id = book.BookId }, null)
+            </td>
+        </tr>
+    }
+</table>

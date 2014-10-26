@@ -1,0 +1,12 @@
+﻿#extras-container, #engine-container {
+    display: inline-block;
+    border: 1px solid #48d1cc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#Submit {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

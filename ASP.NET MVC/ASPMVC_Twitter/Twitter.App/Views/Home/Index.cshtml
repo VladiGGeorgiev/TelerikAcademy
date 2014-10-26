@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Twitter.Models.Tweet>
+
+@{
+    ViewBag.Title = "Home Page";  
+}
+
+<div class="container">
+    @foreach (var tweet in Model)
+    {
+        @Html.Partial("_Tweet", tweet)
+    }
+</div>

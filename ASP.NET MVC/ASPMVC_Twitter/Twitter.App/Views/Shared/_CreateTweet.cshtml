@@ -1,0 +1,23 @@
+﻿@model Twitter.Models.Tweet
+
+@using (@Html.BeginForm("Create", "Tweets"))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+
+    <fieldset class="form-horizontal">
+        <legend>Create new tweet</legend>
+        <div class="control-group">
+            @Html.LabelFor(m => m.Content, new { @class = "control-label" })
+            <div class="controls">
+                @Html.TextBoxFor(m => m.Content)
+                @Html.ValidationMessageFor(m => m.Content, null, new { @class = "help-inline" })
+            </div>
+        </div>
+
+        <div class="form-actions no-color">
+            <input type="submit" value="tweet" class="btn" />
+            <a class="btn-link" href="http://localhost:2117/Tweets/">Cancel</a>
+        </div>
+    </fieldset>
+}

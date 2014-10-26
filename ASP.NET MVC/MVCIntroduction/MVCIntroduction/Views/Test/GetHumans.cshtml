@@ -1,0 +1,8 @@
+﻿@model ICollection<MVCIntroduction.Models.Human>
+
+<ul>
+    @foreach (var human in Model)
+    {
+        <li>Name: @human.Name Age: @human.Age</li>
+    }
+</ul>

@@ -1,0 +1,15 @@
+﻿@model Twitter.Models.HashTag
+
+@{
+    ViewBag.Title = "Tags";
+}
+
+<div class="row-fluid">
+    <h3>@Model.Name</h3>
+
+    @foreach (var tweet in Model.TagTweets)
+    {
+        @Html.Partial("_Tweet", tweet)
+    }
+
+</div>

@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="BulgarianSite.master.cs" Inherits="InternationalCompany.BulgariaSite" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content3" runat="server" ContentPlaceHolderID="MenuPlaceHolder">
+    <div class="main-sidebar-title">Menu</div>
+    <ul>
+        <li><a id="A4" href="~/EnglishSite/Home.aspx" runat="server">Англисйки сайт</a></li>
+        <li><a id="A5" href="~/BulgarianSite/Home.aspx" runat="server">Български сайт</a></li>
+        <li><a id="A6" href="~/RussianSite/Home.aspx" runat="server">Руски сайт</a></li>
+    </ul>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainPlaceHolder" runat="server">
+    <div class="sidebar-title">Menu</div>
+    <ul>
+        <li><a id="A1" href="~/BulgarianSite/Home.aspx" runat="server">Начало</a></li>
+        <li><a id="A2" href="~/BulgarianSite/About.aspx" runat="server">За компанията</a></li>
+        <li><a id="A3" href="~/BulgarianSite/Contacts.aspx" runat="server">Контакти</a></li>
+    </ul>
+    <asp:ContentPlaceHolder runat="server" ID="BulgarianSitePlaceHolder"></asp:ContentPlaceHolder>
+</asp:Content>

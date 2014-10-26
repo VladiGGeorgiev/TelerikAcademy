@@ -1,0 +1,25 @@
+﻿@using Microsoft.Ajax.Utilities
+@model IEnumerable<BookSystem.Models.Category>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    @foreach (var category in Model)
+    {
+        <div class="span4">
+            <h2>@category.Title</h2>
+            <ul>
+                @foreach (var book in @category.Books)
+                {
+                    <li>
+                        @{
+                            var title = book.Title + " by " + book.Author;
+                        }
+                        @Html.ActionLink(title, "Details", "Books", new { id = book.BookId }, null)
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+</div>

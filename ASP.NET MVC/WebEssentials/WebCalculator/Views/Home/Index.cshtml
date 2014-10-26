@@ -1,0 +1,40 @@
+﻿@model WebCalculator.ViewModel.CalculatorViewModel
+@{
+    ViewBag.Title = "Web Calculator";  
+}
+
+<h2>@ViewBag.Title</h2>
+@using (Html.BeginForm("Index", "Home", FormMethod.Get))
+{
+    <label for="quantity">Quantity</label>
+    <input id="quantity" type="text" name="quantity" value="@Model.Quantity" /> <br/>
+    <label for="quantity">Type</label>
+    <select id="type" name="type">
+        @foreach (var item in Model.CalculatedUnits)
+        {
+            if (item.Key == Model.Type)
+            {
+                <option selected="selected">@item.Key</option>
+            }
+            else
+            {
+                <option>@item.Key</option>
+            }
+        }
+    </select>
+    <br/>
+    <label for="quantity">Quantity</label>
+    <select id="kilo" name="Kilo">
+        <option selected="selected">1024</option>
+        <option>1000</option>
+    </select>
+    <br/>
+    <input type="submit" name="go" value="Calculate" />
+}
+
+<h2>Results</h2>
+
+@foreach (var item in Model.CalculatedUnits)
+{
+    <div>@item.Key -> @item.Value</div>
+}

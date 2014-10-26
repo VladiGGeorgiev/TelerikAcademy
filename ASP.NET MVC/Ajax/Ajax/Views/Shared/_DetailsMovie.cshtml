@@ -1,0 +1,69 @@
+﻿@model Ajax.Models.Movie
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Movie</legend>
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Director)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Director)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Year)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Year)
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.LeadingFemaleRole)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeadingFemaleRole.Name) <br/>
+            Age: @Html.DisplayFor(model => model.LeadingFemaleRole.Age) <br />
+            Studio: @Html.DisplayFor(model => model.LeadingFemaleRole.Studio) <br />
+            Address: @Html.DisplayFor(model => model.LeadingFemaleRole.StudioAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LeadingMaleRole)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeadingMaleRole.Name) <br />
+            Age: @Html.DisplayFor(model => model.LeadingMaleRole.Age) <br />
+            Studio: @Html.DisplayFor(model => model.LeadingMaleRole.Studio) <br />
+            Address: @Html.DisplayFor(model => model.LeadingMaleRole.StudioAddress)
+
+        </dd>
+
+    </dl>
+</fieldset>
+<p>
+    @Ajax.ActionLink("Edit", "Edit", "Movies", new { id=Model.MovieId }, new AjaxOptions()
+    {
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "partial-container",
+        HttpMethod = "GET"
+    }) |
+    @Html.ActionLink("Back to List", "Index", "Movies")
+</p>

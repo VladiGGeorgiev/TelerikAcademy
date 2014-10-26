@@ -1,0 +1,12 @@
+﻿@model Twitter.Models.Tweet
+<div class="span3 well well-small">
+    <p>@Model.Content</p>
+    <p>
+        tags:
+        @foreach (var tag in @Model.TweetTags)
+        {
+            @Html.ActionLink(tag.Name, "Index", "Tags", new { tag = tag.Name }, new { @class = "tag-button" })
+        }
+    </p>
+</div>
+

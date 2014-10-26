@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PascalFormatCode", "PascalFormatCode\PascalFormatCode.csproj", "{62C5A69C-2C81-4949-934E-ADFED7C717F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TishoTask3", "TishoTask3\TishoTask3.csproj", "{1E804C7B-7B6C-468B-8F4B-4DF94EFDCDDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{81A7AAC8-DDA3-4517-8DB5-AD9467748E34}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62C5A69C-2C81-4949-934E-ADFED7C717F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C5A69C-2C81-4949-934E-ADFED7C717F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C5A69C-2C81-4949-934E-ADFED7C717F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C5A69C-2C81-4949-934E-ADFED7C717F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E804C7B-7B6C-468B-8F4B-4DF94EFDCDDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E804C7B-7B6C-468B-8F4B-4DF94EFDCDDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E804C7B-7B6C-468B-8F4B-4DF94EFDCDDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E804C7B-7B6C-468B-8F4B-4DF94EFDCDDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81A7AAC8-DDA3-4517-8DB5-AD9467748E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81A7AAC8-DDA3-4517-8DB5-AD9467748E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81A7AAC8-DDA3-4517-8DB5-AD9467748E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81A7AAC8-DDA3-4517-8DB5-AD9467748E34}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

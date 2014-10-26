@@ -1,0 +1,11 @@
+﻿@model System.Linq.IQueryable<KendoUI_LibrarySystem.Models.Book>
+
+<h2>title</h2>
+<ul>
+    @foreach (var book in Model)
+    {
+        <li>
+            @book.Title (by @book.Author) - category @book.Category.Title
+        </li>
+    }
+</ul>

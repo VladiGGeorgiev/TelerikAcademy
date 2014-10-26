@@ -1,0 +1,63 @@
+﻿@model PractialExam.App.ViewModels.TicketDetailsViewModel
+           
+<h1>Ticketing System</h1>
+<h2>@Model.Title</h2>
+<h2>Category: @Model.Category</h2>
+
+<div class="row">
+    <div class="span4">
+        <div><strong>Author: </strong>@Model.Author</div>
+        <div><strong>Priority: </strong>@Model.Priority</div>
+    </div>
+    <div class="span4">
+        @if (!string.IsNullOrEmpty(Model.ScreenshotUrl))
+        {
+            <img src="@Model.ScreenshotUrl" alt="@Model.Title image" width="300" height="300" />
+        }
+    </div>
+    <div class="span4">
+        @if (!string.IsNullOrEmpty(Model.Description))
+        {
+            <strong>Description: </strong>
+            @Model.Description
+        }
+    </div>
+</div>
+<h3>Comments</h3>
+<div class="row">
+    <div id="ticket-comments" class="span4">
+        @foreach (var comment in @Model.Comments)
+        {
+            @Html.Partial("_CommentPartial", comment)
+        }
+    </div>
+</div>
+@if (User.Identity.IsAuthenticated)
+{
+    <div>
+        <strong>Add comment</strong>
+        @using (Ajax.BeginForm("Comment",
+            new AjaxOptions()
+            {
+                HttpMethod = "POST",
+                InsertionMode = InsertionMode.InsertAfter,
+                UpdateTargetId = "ticket-comments",
+                OnSuccess = "onSuccess",
+                OnFailure = "onFailure"
+            }))
+        {
+            <label for="post-comment"></label>
+            <input type="hidden" name="TicketId" value="@Model.Id" />
+            <textarea id="post-comment" name="content"></textarea>
+            <input type="submit" value="Comment" />
+        }
+    </div>
+}
+
+<script>
+    function onFailure() {
+        if ($("#post-comment")) {
+            alert("Comment is required!");
+        }
+    }
+</script>

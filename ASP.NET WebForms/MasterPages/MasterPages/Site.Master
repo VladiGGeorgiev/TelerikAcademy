@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MasterPages.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="styles/site.css" rel="stylesheet" />
+</head>
+<body>
+    <header id="header">
+        <h1>Header</h1>
+    </header>
+    <aside id="sidebar">
+        <div class="sidebar-title">Menu</div>
+        <ul>
+            <li><a id="A1" href="~/Home.aspx" runat="server">Home</a></li>
+            <li><a id="A2" href="~/PersonalInfo.aspx" runat="server">Personal Info</a></li>
+            <li><a id="A3" href="~/Friends.aspx" runat="server">Friends</a></li>
+            <li><a id="A4" href="~/AdditionalInfo.aspx" runat="server">Additional Info</a></li>
+        </ul>
+    </aside>
+    <section id="content">
+        <asp:ContentPlaceHolder ID="MainPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </section>
+    <footer id="footer">
+        <p>(c) Monkey Corp. 2013</p> 
+    </footer>
+</body>
+</html>

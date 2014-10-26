@@ -1,0 +1,41 @@
+﻿@using Kendo.Mvc.UI
+@using PractialExam.App.ViewModels
+@model IEnumerable<PracticalExam.Models.Category>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@(Html.Kendo().Grid<CategoryViewModel>().Name("CommentGrid")
+    .Columns(col =>
+    {
+        col.Bound(m => m.Name);
+        col.Command(com =>
+                    {
+                        com.Edit();
+                        com.Destroy();
+                    }).Title("Commands");
+    })
+    .Pageable()
+    .Sortable()
+    .Filterable()
+    .ToolBar(toolbar => toolbar.Create())
+    .Editable(edit =>
+            {
+                edit.Mode(GridEditMode.PopUp);
+            })
+    .DataSource(data => data
+                .Ajax()
+                .ServerOperation(true)
+                .PageSize(5)
+                .Model(m =>
+                    {
+                        m.Id("Id");
+                        m.Field(com => com.Name).Editable(true);
+                    })
+                .Read("Read", "AdminCategories")
+                .Create("Create", "AdminCategories")
+                .Update("Update", "AdminCategories")
+                .Destroy("Destroy", "AdminCategories")
+            )
+)

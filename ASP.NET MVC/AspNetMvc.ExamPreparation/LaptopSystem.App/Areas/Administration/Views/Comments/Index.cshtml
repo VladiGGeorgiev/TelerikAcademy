@@ -1,0 +1,35 @@
+﻿@using Kendo.Mvc.UI
+@using LaptopSystem.App.ViewModels
+@(Html.Kendo().Grid<CommentViewModel>().Name("CommentGrid")
+        .Pageable().Sortable()
+        .Filterable()
+        .Editable(edit =>
+                {
+                    edit.Mode(GridEditMode.InLine);
+                })
+    .Columns(col =>
+            {
+                col.Bound(m => m.Content);
+                col.Bound(m => m.Author);
+                col.Command(com =>
+                            {
+                                com.Edit();
+                                com.Destroy();
+                            }).Title("Commands");
+            })
+    .DataSource(data =>
+            {
+                data.Ajax()
+                    .ServerOperation(true)
+                    .PageSize(5)
+                    .Model(m => 
+                        {
+                            m.Id("Id");
+                            m.Field(com => com.Author).Editable(false);
+                        })
+                    .Read("Read", "Comments")
+                    .Create("Create", "CommentsController")
+                    .Update("Update", "CommentsController")
+                    .Destroy("Destroy", "CommentsController");
+            })
+)
