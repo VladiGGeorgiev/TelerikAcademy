@@ -1,0 +1,34 @@
+﻿@model int
+<br />
+<div>
+    <button id="join-room" class="btn" data-group-id="@Model">Join Grop Chat</button>
+</div>
+
+<div class="container-fluid" id="only-joined-users">
+    <div class="row-fluid">
+        <pre class="span12" id="chat-window"></pre>
+    </div>
+    <div class="row-fluid">
+        <div class="input-append span12">
+            <input class="span4" type="text" id="message" />
+            <button class="btn" id="send-message">Send</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    //$(function () {
+    //    $("#join-room").on("click", function () {
+    //        $(this).hide();
+    //        $("#only-joined-users").show();
+    //        var id = $(this).attr("data-group-id");
+
+    //    });
+    //});
+</script>
+
+<style scoped>
+    #only-joined-users {
+        display: none;
+    }
+</style>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingSearchingAlgo", "SortingSearchingAlgo\SortingSearchingAlgo.csproj", "{04728E17-1EB0-4765-939A-3F465A774A78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsAlgorithms", "AlgorithmsTests\TestsAlgorithms.csproj", "{D4593A1F-DC52-485F-A576-D12390ADF769}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04728E17-1EB0-4765-939A-3F465A774A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04728E17-1EB0-4765-939A-3F465A774A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04728E17-1EB0-4765-939A-3F465A774A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04728E17-1EB0-4765-939A-3F465A774A78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4593A1F-DC52-485F-A576-D12390ADF769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4593A1F-DC52-485F-A576-D12390ADF769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4593A1F-DC52-485F-A576-D12390ADF769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4593A1F-DC52-485F-A576-D12390ADF769}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

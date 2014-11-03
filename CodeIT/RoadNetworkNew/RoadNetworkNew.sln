@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.20827.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RoadNetworkNew", "RoadNetworkNew\RoadNetworkNew.vcxproj", "{83AF77D7-5F54-4A7B-A267-399A7C9D156A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Laziness", "Laziness\Laziness.vcxproj", "{514A7223-BF80-4BF8-AB40-EB30C3AEB46D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Goro", "Goro\Goro.vcxproj", "{8981A08E-02EE-4117-B37D-E620F263C01F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algograms", "Algograms\Algograms.vcxproj", "{9001B26C-8F19-4C20-AF32-726626835718}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83AF77D7-5F54-4A7B-A267-399A7C9D156A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{83AF77D7-5F54-4A7B-A267-399A7C9D156A}.Debug|Win32.Build.0 = Debug|Win32
+		{83AF77D7-5F54-4A7B-A267-399A7C9D156A}.Release|Win32.ActiveCfg = Release|Win32
+		{83AF77D7-5F54-4A7B-A267-399A7C9D156A}.Release|Win32.Build.0 = Release|Win32
+		{514A7223-BF80-4BF8-AB40-EB30C3AEB46D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{514A7223-BF80-4BF8-AB40-EB30C3AEB46D}.Debug|Win32.Build.0 = Debug|Win32
+		{514A7223-BF80-4BF8-AB40-EB30C3AEB46D}.Release|Win32.ActiveCfg = Release|Win32
+		{514A7223-BF80-4BF8-AB40-EB30C3AEB46D}.Release|Win32.Build.0 = Release|Win32
+		{8981A08E-02EE-4117-B37D-E620F263C01F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8981A08E-02EE-4117-B37D-E620F263C01F}.Debug|Win32.Build.0 = Debug|Win32
+		{8981A08E-02EE-4117-B37D-E620F263C01F}.Release|Win32.ActiveCfg = Release|Win32
+		{8981A08E-02EE-4117-B37D-E620F263C01F}.Release|Win32.Build.0 = Release|Win32
+		{9001B26C-8F19-4C20-AF32-726626835718}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9001B26C-8F19-4C20-AF32-726626835718}.Debug|Win32.Build.0 = Debug|Win32
+		{9001B26C-8F19-4C20-AF32-726626835718}.Release|Win32.ActiveCfg = Release|Win32
+		{9001B26C-8F19-4C20-AF32-726626835718}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

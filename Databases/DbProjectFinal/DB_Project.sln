@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supermarket.Data", "DaySales.Data\Supermarket.Data.csproj", "{CE5F9F01-44BC-475C-9F52-DEEB14F965A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supermarket.Client", "DaySales.Client\Supermarket.Client.csproj", "{A8475620-4BA6-4AF5-A86F-644ECFE8596C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportGenerator", "ReportGenerator\ReportGenerator.csproj", "{808544A6-48EB-4B85-B703-0415E85890FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supermarket.Model", "Supermarket.Model\Supermarket.Model.csproj", "{C50145E6-A244-4F1F-B41F-90D1925B4A00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLiteConnector", "SQLiteConnector\SQLiteConnector.csproj", "{05CEF546-CAFF-46E8-A988-D4308C2C509C}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://csharp-exercises.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DaySales.Client\\Supermarket.Client.csproj
+		SccProjectName1 = DaySales.Client
+		SccLocalPath1 = DaySales.Client
+		SccProjectUniqueName2 = DaySales.Data\\Supermarket.Data.csproj
+		SccProjectName2 = DaySales.Data
+		SccLocalPath2 = DaySales.Data
+		SccProjectUniqueName3 = ReportGenerator\\ReportGenerator.csproj
+		SccProjectName3 = ReportGenerator
+		SccLocalPath3 = ReportGenerator
+		SccProjectUniqueName4 = Supermarket.Model\\Supermarket.Model.csproj
+		SccProjectName4 = Supermarket.Model
+		SccLocalPath4 = Supermarket.Model
+		SccProjectUniqueName5 = SQLiteConnector\\SQLiteConnector.csproj
+		SccProjectName5 = SQLiteConnector
+		SccLocalPath5 = SQLiteConnector
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE5F9F01-44BC-475C-9F52-DEEB14F965A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE5F9F01-44BC-475C-9F52-DEEB14F965A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE5F9F01-44BC-475C-9F52-DEEB14F965A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE5F9F01-44BC-475C-9F52-DEEB14F965A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8475620-4BA6-4AF5-A86F-644ECFE8596C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8475620-4BA6-4AF5-A86F-644ECFE8596C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8475620-4BA6-4AF5-A86F-644ECFE8596C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8475620-4BA6-4AF5-A86F-644ECFE8596C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{808544A6-48EB-4B85-B703-0415E85890FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{808544A6-48EB-4B85-B703-0415E85890FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{808544A6-48EB-4B85-B703-0415E85890FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{808544A6-48EB-4B85-B703-0415E85890FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C50145E6-A244-4F1F-B41F-90D1925B4A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50145E6-A244-4F1F-B41F-90D1925B4A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50145E6-A244-4F1F-B41F-90D1925B4A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50145E6-A244-4F1F-B41F-90D1925B4A00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05CEF546-CAFF-46E8-A988-D4308C2C509C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05CEF546-CAFF-46E8-A988-D4308C2C509C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05CEF546-CAFF-46E8-A988-D4308C2C509C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05CEF546-CAFF-46E8-A988-D4308C2C509C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

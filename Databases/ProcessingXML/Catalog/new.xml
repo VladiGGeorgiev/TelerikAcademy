@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<albums>
+  <album>
+    <name>Love me</name>
+    <artist>Galena</artist>
+    <year>2013</year>
+    <producer>Painer</producer>
+    <price>100$</price>
+    <songs>
+      <title>Dryj go!</title>
+      <duration>2.5</duration>
+    </songs>
+  </album>
+</albums>

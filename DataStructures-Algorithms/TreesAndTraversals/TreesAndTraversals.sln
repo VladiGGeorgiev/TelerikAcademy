@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Tree", "TreesAndTraversals\1. Tree.csproj", "{B99FFA32-CD91-4079-9F50-1C7763F9DD30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. TraverseDirectory", "TraverseDirectory\2. TraverseDirectory.csproj", "{B09D5C80-A2F1-4902-B411-8F4905A20329}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. BuildDirectoriesTree", "BuildDirectoriesTree\3. BuildDirectoriesTree.csproj", "{EE9F4013-4829-4996-B09F-599C94C7B142}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1e. PathsWithGivenSum", "1e. PathsWithGivenSum\1e. PathsWithGivenSum.csproj", "{11C33BD5-174F-41E4-8796-B81D15964377}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B99FFA32-CD91-4079-9F50-1C7763F9DD30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99FFA32-CD91-4079-9F50-1C7763F9DD30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99FFA32-CD91-4079-9F50-1C7763F9DD30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99FFA32-CD91-4079-9F50-1C7763F9DD30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B09D5C80-A2F1-4902-B411-8F4905A20329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09D5C80-A2F1-4902-B411-8F4905A20329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09D5C80-A2F1-4902-B411-8F4905A20329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09D5C80-A2F1-4902-B411-8F4905A20329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE9F4013-4829-4996-B09F-599C94C7B142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE9F4013-4829-4996-B09F-599C94C7B142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE9F4013-4829-4996-B09F-599C94C7B142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE9F4013-4829-4996-B09F-599C94C7B142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11C33BD5-174F-41E4-8796-B81D15964377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C33BD5-174F-41E4-8796-B81D15964377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C33BD5-174F-41E4-8796-B81D15964377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C33BD5-174F-41E4-8796-B81D15964377}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

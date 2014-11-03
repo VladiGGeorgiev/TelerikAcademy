@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoDP. Guitar", "AlgoDP. Guitar\AlgoDP. Guitar.csproj", "{EE16D181-E543-44E1-A90D-FB79284BF083}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo-Graphs-LinkedOut", "Algo-Graph-LinkedOut\Algo-Graphs-LinkedOut.csproj", "{A22B8320-24A4-40AD-8F6A-DFBC571F5973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo-Graphs-DoubleFrinds", "Algo-Graphs-DoubleFrinds\Algo-Graphs-DoubleFrinds.csproj", "{72E8A05B-5FD2-4D11-AE74-2E2C006B0178}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo-Graphs-FriendsOfPesho", "Algo-Graphs-FriendsOfPesho\Algo-Graphs-FriendsOfPesho.csproj", "{7FC31190-2F0E-47C1-BE7C-E2C643958C69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo-Graphs-MaxPath", "Algo-Graphs-MaxPath\Algo-Graphs-MaxPath.csproj", "{879D0476-D4CF-422D-8AA5-9A116FED64BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algo-Graphs-Salaries", "Algo-Graphs-Salaries\Algo-Graphs-Salaries.csproj", "{91EB5E09-A047-4AB1-9F7F-BE4D6F52B2FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE16D181-E543-44E1-A90D-FB79284BF083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE16D181-E543-44E1-A90D-FB79284BF083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE16D181-E543-44E1-A90D-FB79284BF083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE16D181-E543-44E1-A90D-FB79284BF083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A22B8320-24A4-40AD-8F6A-DFBC571F5973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22B8320-24A4-40AD-8F6A-DFBC571F5973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22B8320-24A4-40AD-8F6A-DFBC571F5973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22B8320-24A4-40AD-8F6A-DFBC571F5973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E8A05B-5FD2-4D11-AE74-2E2C006B0178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E8A05B-5FD2-4D11-AE74-2E2C006B0178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E8A05B-5FD2-4D11-AE74-2E2C006B0178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E8A05B-5FD2-4D11-AE74-2E2C006B0178}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FC31190-2F0E-47C1-BE7C-E2C643958C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC31190-2F0E-47C1-BE7C-E2C643958C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC31190-2F0E-47C1-BE7C-E2C643958C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC31190-2F0E-47C1-BE7C-E2C643958C69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{879D0476-D4CF-422D-8AA5-9A116FED64BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{879D0476-D4CF-422D-8AA5-9A116FED64BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{879D0476-D4CF-422D-8AA5-9A116FED64BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{879D0476-D4CF-422D-8AA5-9A116FED64BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91EB5E09-A047-4AB1-9F7F-BE4D6F52B2FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91EB5E09-A047-4AB1-9F7F-BE4D6F52B2FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91EB5E09-A047-4AB1-9F7F-BE4D6F52B2FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91EB5E09-A047-4AB1-9F7F-BE4D6F52B2FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

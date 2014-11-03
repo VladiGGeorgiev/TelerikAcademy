@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookmarksDb.Model", "BookmarksDb.Model\BookmarksDb.Model.csproj", "{C2B6727B-E6F8-4DCD-9094-6D7CE382D0DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookmarksXML.Model", "BookmarksXML.Model\BookmarksXML.Model.csproj", "{2FCED6B4-AD19-4F22-B027-F66A7D608566}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookmarksXMLParser", "BookmarksXMLParser\BookmarksXMLParser.csproj", "{D8D9FCEC-80F4-46F5-BA38-A2891D8178F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2B6727B-E6F8-4DCD-9094-6D7CE382D0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B6727B-E6F8-4DCD-9094-6D7CE382D0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B6727B-E6F8-4DCD-9094-6D7CE382D0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B6727B-E6F8-4DCD-9094-6D7CE382D0DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FCED6B4-AD19-4F22-B027-F66A7D608566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FCED6B4-AD19-4F22-B027-F66A7D608566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FCED6B4-AD19-4F22-B027-F66A7D608566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FCED6B4-AD19-4F22-B027-F66A7D608566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8D9FCEC-80F4-46F5-BA38-A2891D8178F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8D9FCEC-80F4-46F5-BA38-A2891D8178F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8D9FCEC-80F4-46F5-BA38-A2891D8178F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8D9FCEC-80F4-46F5-BA38-A2891D8178F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

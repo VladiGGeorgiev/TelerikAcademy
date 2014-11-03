@@ -1,0 +1,25 @@
+﻿@model System.Collections.Generic.List<JusTeeth.App.ViewModels.PlaceViewModel>
+
+@{
+    ViewBag.Title = "Places";
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<h2>Places</h2>
+
+<div id="places">
+    <ul>
+        @foreach (var place in Model)
+        {
+            <li>
+                <div class="place-background"></div>
+                <div class="place-info">
+                    <h4>@place.Name</h4>
+                    <div><strong>@place.AlternativeName</strong></div>
+                    <div><strong>Rating: </strong>@place.Rating</div>
+                    <a class="btn" href="/Places/Details/@place.Id">Details..</a>
+                </div>
+            </li>
+        }
+    </ul>
+</div>

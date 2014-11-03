@@ -1,0 +1,116 @@
+﻿@model JusTeeth.App.ViewModels.UserViewModel
+
+@{
+    ViewBag.Title = @Model.UserName;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 id="user-title">@ViewBag.Title</h2>
+<div class="row">
+    <div id="profile-information" class="span6">
+        <div id="user-avatar">
+            <img class="img-polaroid img-rounded" src="/Content/UserPhotos/@(Model.Avatar)" width="150" alt="Alternate Text" />
+        </div>
+        <div class="span4" id="user-info">
+            <div class="info-row">
+                <span>@Html.DisplayNameFor(model => model.UserName):</span>
+                <strong>@Html.DisplayFor(model => model.UserName)</strong>
+            </div>
+            <div class="info-row">
+                <span>@Html.DisplayNameFor(model => model.DisplayName):</span>
+                <strong>@Html.DisplayFor(model => model.DisplayName)</strong>
+            </div>
+            <div class="info-row">
+                Social networks:
+                <a href="@Model.FacebookProfile">
+                    <img src="http://telerikacademy.com/Content/Users/Profiles/Images/facebook-icon.jpg" alt="Alternate Text" />
+                </a>
+            </div>
+            <div class="info-row">
+                <span>@Html.DisplayNameFor(model => model.Workplace):</span>
+                <a href="#"><strong>@Html.DisplayFor(model => model.Workplace)</strong></a>
+            </div>
+            <div class="info-row">
+                <span>@Html.DisplayNameFor(model => model.Department):</span>
+                <a href="#"><strong>@Html.DisplayFor(model => model.Department)</strong></a>
+            </div>
+            <div class="info-row">
+                @if (@Model.IsTogetherFriends(User.Identity.Name, Model.UserName))
+                {
+                    <div class="k-inline-block" style="display:inline-block">Allready friends</div>
+                }
+                else if (@Model.IsFriend(User.Identity.Name))
+                {
+                    @Ajax.ActionLink("Request", "Friend", "Users", 
+                        new { username = @Model.UserName }, 
+                        new AjaxOptions() {HttpMethod = "Get"}, 
+                        new { @class="btn"})
+                }
+                else
+                {
+                    @Ajax.ActionLink("Friend", "Friend", "Users", 
+                        new { username = @Model.UserName }, 
+                        new AjaxOptions() {HttpMethod = "Get"}, 
+                        new { @class="btn"})
+                }
+            </div>
+
+        </div>
+    </div>
+    <div id="friend" class="span6">
+        <h2>Friends</h2>
+        <ul>
+            @foreach (var user in Model.Friends)
+            {
+                <li>
+                    <a href="/Users/@user.UserName">
+                        <span>@user.DisplayName</span>
+                        <br />
+                        <img src="/Content/UserPhotos/@(user.Avatar)" width="80" />
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
+@if (@Model.IsTogetherFriends(User.Identity.Name, Model.UserName))
+{ 
+    <div class="row">
+        <div class="span6" id="user-groups">
+            <h2>Groups</h2>
+            <ul>
+                @foreach (var group in Model.GroupHistory)
+                {
+                    <li class="k-window">
+                        <a href="/Groups/GroupDetails/@group.Id">
+                            <div><span>Creator: </span><strong>@group.Creator</strong></div>
+                            <div><span>Start time: </span><strong>@group.StartingTime</strong></div>
+                            <div><span>Eat time: </span><strong>@group.EatTime</strong></div>
+                        </a>
+                    </li>
+                }
+            </ul>
+        </div>
+        <div class="span6" id="user-places">
+            <h2>Last Places</h2>
+            <ul>
+                @foreach (var place in Model.LastPlaces)
+                {
+                    <li class="k-window">
+                        <a href="/Places/Details/@place.Id">
+                            <div><strong>@place.Name</strong></div>
+                            <div>@place.Address</div>
+                            <div>Rating: @place.Rating</div>
+                        </a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+}
+@if (@User.Identity.Name.ToLower() == @Model.UserName.ToLower())
+{
+    @Html.ActionLink("Edit profile", "EditProfile", "Users", null, new { @class = "btn" })
+    @Html.ActionLink("Change password", "Manage", "Account", null, new { @class = "btn" })
+}
