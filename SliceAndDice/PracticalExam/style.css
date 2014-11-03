@@ -1,0 +1,841 @@
+html, body, div, ul, li, h1, h2, h3, h4, footer, header, section, article {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header#main-header #header-background {
+    background: #2993c4;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #2993c4 0%, #c2ced3 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2993c4), color-stop(100%, #c2ced3));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #2993c4 0%, #c2ced3 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #2993c4 0%, #c2ced3 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #2993c4 0%, #c2ced3 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #2993c4 0%, #c2ced3 100%);
+    /* W3C */
+    behavior: url(scripts/PIE_uncompressed.htc);
+}
+
+header#main-header #logo {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+    header#main-header #logo a {
+        color: #fff;
+        font-size: 48px;
+        font-family: Myriad Pro;
+        font-weight: normal;
+        letter-spacing: -3.5px;
+        text-shadow: 1px 1px 1px #016492;
+        behavior: url(scripts/PIE_uncompressed.htc);
+    }
+
+        header#main-header #logo a:hover {
+            text-decoration: underline;
+        }
+
+header#main-header nav {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    margin-left: 30px;
+}
+
+    header#main-header nav ul {
+        list-style: none;
+    }
+
+        header#main-header nav ul li {
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+        }
+
+            header#main-header nav ul li a {
+                font-size: 14px;
+                color: #fff;
+                font-family: OpenSans-Semibold;
+                padding: 5px 11px;
+                text-shadow: 1px 1px 1px #016492;
+                behavior: url(scripts/PIE_uncompressed.htc);
+            }
+
+                header#main-header nav ul li a:hover {
+                    background-color: rgba(4, 99, 142, 0.91);
+                    border-radius: 5px;
+                    box-shadow: 0 0 7px #7e7e7e inset;
+                    font-family: OpenSans-ExtraBold;
+                    behavior: url(scripts/PIE_uncompressed.htc);
+                }
+
+            header#main-header nav ul li:last-child a {
+                padding-right: 0;
+            }
+
+header#main-header #title {
+    margin-top: 90px;
+    text-align: center;
+    color: #fff;
+    font-family: OpenSans-ExtraBold;
+    font-size: 72px;
+    letter-spacing: -4px;
+    text-shadow: 1px 1px 1px #016492;
+    behavior: url(scripts/PIE_uncompressed.htc);
+}
+
+    header#main-header #title span {
+        font-family: OpenSans-Light;
+    }
+
+header#main-header #description {
+    margin-top: -5px;
+    color: #fff;
+    font-family: OpenSans-Light;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #016492;
+    letter-spacing: -2px;
+    behavior: url(scripts/PIE_uncompressed.htc);
+}
+
+header#main-header #slider {
+    margin-top: 40px;
+}
+
+    header#main-header #slider #left-arrow {
+        position: absolute;
+        top: 350px;
+        left: -100px;
+    }
+
+    header#main-header #slider #right-arrow {
+        position: absolute;
+        top: 350px;
+        left: 1050px;
+    }
+
+#secondary-header {
+    margin: 80px 0;
+}
+
+    #secondary-header div.article {
+        width: 270px;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        margin-right: 70px;
+    }
+
+        #secondary-header div.article:last-child {
+            margin-right: 0;
+        }
+
+        #secondary-header div.article header {
+            font-family: OpenSans-Light;
+            font-size: 24px;
+            color: #a3a2a2;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        #secondary-header div.article article {
+            font-family: OpenSans;
+            font-size: 14px;
+            color: #555e58;
+        }
+
+        #secondary-header div.article .read-more-btn {
+            border: 1px solid #e0dddd;
+            background-color: #f8f8f8;
+            color: #9a9999;
+            border-radius: 5px;
+            padding: 5px 10px;
+            float: right;
+            text-shadow: 1px 1px 1px #fff;
+            margin-top: 20px;
+            behavior: url(scripts/PIE_uncompressed.htc);
+        }
+
+    #secondary-header #quote {
+        margin: 0 auto;
+        width: 960px;
+        margin-top: 80px;
+        text-align: center;
+        font-family: OpenSans-Light;
+        font-size: 24px;
+    }
+
+        #secondary-header #quote span {
+            font-family: OpenSans-ExtraBold;
+            font-size: 30px;
+        }
+
+section#news {
+    background-color: #829aa7;
+}
+
+    section#news .wrapper {
+        padding: 0;
+    }
+
+    section#news h2 {
+        font-family: OpenSans-ExtraBold;
+        font-size: 72px;
+        text-align: center;
+        color: #fff;
+    }
+
+        section#news h2 span {
+            font-family: OpenSans-Light;
+        }
+
+    section#news #news-desc {
+        font-family: OpenSans-Light;
+        font-size: 36px;
+        text-align: center;
+        color: #fff;
+    }
+
+    section#news article {
+        width: 260px;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        margin-right: 55px;
+        color: #fff;
+        font-size: 14px;
+        font-family: OpenSans;
+        text-align: center;
+    }
+
+        section#news article h3 {
+            text-align: left;
+            color: #fff;
+            font-size: 20px;
+            font-family: OpenSans-ExtraBold;
+            text-shadow: 1px 1px 1px #464c48;
+            behavior: url(scripts/PIE_uncompressed.htc);
+        }
+
+        section#news article span {
+            color: #b0bab4;
+            text-shadow: 1px 1px 1px #464c48;
+            behavior: url(scripts/PIE_uncompressed.htc);
+        }
+
+        section#news article div {
+            text-align: left;
+        }
+
+        section#news article .read-more-btn {
+            font-family: OpenSans;
+            font-size: 14px;
+            border: 1px solid #535955;
+            color: #3d433f;
+            border-radius: 5px;
+            padding: 5px 10px;
+            float: right;
+            text-shadow: 1px 1px 1px #76837b;
+            margin-top: 20px;
+            background: #69736d;
+            /* Old browsers */
+            background: -moz-linear-gradient(top, #69736d 0%, #636b66 100%);
+            /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #69736d), color-stop(100%, #636b66));
+            /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #69736d 0%, #636b66 100%);
+            /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #69736d 0%, #636b66 100%);
+            /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #69736d 0%, #636b66 100%);
+            /* IE10+ */
+            background: linear-gradient(to bottom, #69736d 0%, #636b66 100%);
+            /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#69736d', endColorstr='#636b66',GradientType=0 );
+            /* IE6-9 */
+            behavior: url(scripts/PIE_uncompressed.htc);
+        }
+
+    section#news .btn {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    section#news #news-btn {
+        color: #fff;
+        font-family: OpenSans-Light;
+        font-size: 30px;
+        text-shadow: 1px 1px 1px #272727;
+        border: 1px solid #404642;
+        box-shadow: 0 0 0 1px #748078 inset;
+        text-align: center;
+        border-radius: 8px;
+        background: #636a66;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #636a66 0%, #525b55 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #636a66), color-stop(100%, #525b55));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #636a66 0%, #525b55 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #636a66 0%, #525b55 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #636a66 0%, #525b55 100%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, #636a66 0%, #525b55 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#636a66', endColorstr='#525b55',GradientType=0 );
+        /* IE6-9 */
+        behavior: url(scripts/PIE_uncompressed.htc);
+    }
+
+#news {
+    padding: 100px 0;
+}
+
+#work {
+    padding: 50px 0 100px 0;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+    #work h2 {
+        font-family: OpenSans-ExtraBold;
+        font-size: 72px;
+        text-align: center;
+        color: #636b66;
+    }
+
+        #work h2 span {
+            font-family: OpenSans-Light;
+        }
+
+        #work h2 #work-desc {
+            font-family: OpenSans-Light;
+            font-size: 36px;
+            text-align: center;
+            color: #777;
+        }
+
+    #work #work-desc {
+        font-size: 30px;
+        color: #636b66;
+        font-family: OpenSans-Light;
+        text-align: center;
+    }
+
+    #work .circle {
+        width: 260px;
+        height: 260px;
+        box-shadow: 0 0 7px inset;
+        background-color: #d4d4d4;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        border-radius: 200px;
+        margin-right: 55px;
+        margin-top: 50px;
+        behavior: url(scripts/PIE_uncompressed.htc);
+    }
+
+        #work .circle:last-child {
+            margin-right: 0;
+        }
+
+    #work .middle-circle {
+        text-align: center;
+        padding-top: 60px;
+        height: 200px;
+        background-color: #eaeaea;
+        margin-top: 10px;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.5) inset;
+    }
+
+    #work #middle-circle-content {
+        position: absolute;
+        top: 320px;
+        left: 340px;
+        text-align: center;
+    }
+
+        #work #middle-circle-content .read-more-btn {
+            background-color: #f3f3f3;
+            font-family: OpenSans;
+            font-size: 14px;
+            border: 1px solid #e0dddd;
+            color: #a7a6a6;
+            border-radius: 5px;
+            padding: 5px 10px;
+            text-shadow: 1px 1px 1px #76837b;
+            margin-top: 20px;
+            behavior: url(scripts/PIE_uncompressed.htc);
+        }
+
+    #work .btn {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    #work #work-button {
+        color: #636b66;
+        font-family: OpenSans-Light;
+        font-size: 30px;
+        border-radius: 8px;
+        text-shadow: 1px 1px 1px #fff;
+        border: 1px solid #e0dddd;
+        box-shadow: 0 0 0 1px #748078 inset;
+        text-align: center;
+        behavior: url(scripts/PIE_uncompressed.htc);
+    }
+
+#plan {
+    padding: 50px 0 100px 0;
+    background-color: #829aa7;
+    text-align: center;
+    behavior: url(scripts/PIE_uncompressed.htc);
+}
+
+    #plan h2 {
+        font-family: OpenSans-ExtraBold;
+        text-shadow: 1px 1px 1px #1d2123;
+        font-size: 72px;
+        text-align: center;
+        color: #fff;
+    }
+
+        #plan h2 span {
+            font-family: OpenSans-Light;
+        }
+
+    #plan #plan-desc {
+        font-family: OpenSans-Light;
+        font-size: 36px;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #1d2123;
+        behavior: url(scripts/PIE_uncompressed.htc);
+    }
+
+    #plan table {
+        width: 100%;
+        border-spacing: 0;
+    }
+
+        #plan table th, #plan table td {
+            padding: 20px;
+        }
+
+        #plan table thead {
+            font-size: 22px;
+            font-family: OpenSans-ExtraBold;
+            color: #fff;
+            text-shadow: 1px 1px 1px #1d2123;
+            background-color: #3e4c57;
+        }
+
+        #plan table td {
+            border-bottom: 1px solid #35424c;
+            border-top: 1px solid #4d606d;
+        }
+
+        #plan table tbody td {
+            background-image: url("images/yes.png");
+            background-repeat: no-repeat;
+            background-position: 40px 20px;
+        }
+
+        #plan table tbody tr:nth-child(3) td {
+            background-image: url("images/no.png");
+            background-repeat: no-repeat;
+            background-position: 40px 20px;
+        }
+
+        #plan table tbody {
+            font-size: 14px;
+            font-family: OpenSans;
+            color: #fff;
+            text-shadow: 1px 1px 1px #1d2123;
+            background-color: #465662;
+            behavior: url(scripts/PIE_uncompressed.htc);
+        }
+
+        #plan table tfoot {
+            background: #4a5b67;
+        }
+
+            #plan table tfoot td {
+                padding: 30px;
+                color: #fff;
+                text-shadow: 1px 1px 1px solid #252132;
+                font-size: 72px;
+                font-family: OpenSans-Light;
+                behavior: url(scripts/PIE_uncompressed.htc);
+            }
+
+    #plan .btn {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    #plan #plan-btn {
+        color: #fff;
+        font-family: OpenSans-Light;
+        font-size: 30px;
+        text-shadow: 1px 1px 1px #272727;
+        border: 1px solid #2d363d;
+        box-shadow: 0 0 0 1px #495a66 inset;
+        text-align: center;
+        border-radius: 8px;
+        background: #3d4b55;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #3d4b55 0%, #35424b 100%);
+        /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3d4b55), color-stop(100%, #35424b));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #3d4b55 0%, #35424b 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #3d4b55 0%, #35424b 100%);
+        /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #3d4b55 0%, #35424b 100%);
+        /* IE10+ */
+        background: linear-gradient(to bottom, #3d4b55 0%, #35424b 100%);
+        /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d4b55', endColorstr='#35424b',GradientType=0 );
+        /* IE6-9 */
+    }
+
+footer {
+    font-family: OpenSans;
+    font-size: 14px;
+    color: #555e58;
+    background-color: #f5f5f5;
+    /*IE 7*/
+    min-height: 0;
+    /*IE 6*/
+    _zoom: 1;
+}
+
+    footer div div {
+        margin-bottom: 50px;
+        width: 270px;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        margin-right: 45px;
+    }
+
+        footer div div span {
+            color: #bfbfbf;
+            font-family: OpenSans-Italic;
+        }
+
+    footer h2 {
+        font-size: 38px;
+        font-weight: normal;
+        font-family: Myriad Pro;
+        color: #555e58;
+        text-shadow: 1px 1px 1px #fff;
+        margin-bottom: 10px;
+        behavior: url(scripts/PIE_uncompressed.htc);
+    }
+
+    footer h4 {
+        font-family: OpenSans-ExtraBold;
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #555e58;
+    }
+
+    footer #copyright {
+        float: right;
+        margin-top: 50px;
+        color: #555e58;
+        text-shadow: 1px 1px 1px #fff;
+        text-align: right;
+        behavior: url(scripts/PIE_uncompressed.htc);
+    }
+
+    footer:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+@media only screen and (min-width: 1360px) {
+    #left-arrow {
+        position: absolute;
+        top: 350px;
+        left: -350px;
+    }
+
+    #right-arrow {
+        position: absolute;
+        top: 350px;
+        left: 1350px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #main-header #header-background .wrapper #logo {
+        display: block;
+        text-align: center;
+    }
+
+    header#main-header #header-background .wrapper {
+        text-align: center;
+    }
+
+        header#main-header #header-background .wrapper nav {
+            width: 80%;
+        }
+
+        header#main-header #header-background .wrapper ul {
+            width: 100%;
+        }
+
+        header#main-header #header-background .wrapper li {
+            display: block;
+            text-align: center;
+            background-color: #186387;
+            border-radius: 5px;
+            box-shadow: 0 0 7px #7e7e7e inset;
+        }
+
+            header#main-header #header-background .wrapper li a {
+                display: block;
+            }
+
+    header#main-header #title {
+        font-size: 48px;
+    }
+
+    header#main-header #description {
+        font-size: 24px;
+    }
+
+    header#main-header #slider #left-arrow {
+        left: 20px;
+        top: 480px;
+    }
+
+    header#main-header #slider #right-arrow {
+        left: 410px;
+        top: 480px;
+    }
+
+    header#main-header #title {
+        margin-top: 50px;
+    }
+
+    #secondary-header div.article header img {
+        display: none;
+    }
+
+    #secondary-header {
+        margin: 10px;
+    }
+
+        #secondary-header .wrapper {
+            padding: 0;
+        }
+
+    #main-header #secondary-header .wrapper .article {
+        width: 100%;
+        margin: 0;
+    }
+
+    #secondary-header #quote {
+        font-size: 18px;
+    }
+
+        #secondary-header #quote span {
+            font-size: 18px;
+        }
+
+    section#news h2 {
+        font-size: 48px;
+    }
+
+    section#news #news-desc {
+        font-size: 24px;
+    }
+
+    section#news article img {
+        display: none;
+    }
+
+    body section#news .wrapper article {
+        width: 100%;
+    }
+
+    section#news article .read-more-btn {
+        margin-right: 15px;
+    }
+
+    #work h2 {
+        font-size: 48px;
+    }
+
+    #work #work-desc {
+        font-size: 24px;
+    }
+
+    #work .wrapper #middle-circle-content {
+        display: none;
+    }
+
+    body #work .wrapper .circle {
+        margin-right: 20px;
+        width: 125px;
+        height: 125px;
+    }
+
+        body #work .wrapper .circle.middle-circle {
+            padding: 0;
+        }
+
+    #plan h2 {
+        font-size: 48px;
+    }
+
+    #plan #plan-desc {
+        font-size: 24px;
+    }
+
+    section#plan table {
+        width: 80%;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    #slider img {
+        width: 100%;
+    }
+
+    #secondary-header .wrapper .article {
+        width: 200px;
+    }
+
+    #main-header #secondary-header #quote {
+        width: 100%;
+    }
+
+    #news .wrapper article {
+        width: 190px;
+    }
+
+        #news .wrapper article:first-child {
+            margin-left: 10px;
+        }
+
+    #work .wrapper .circle {
+        width: 200px;
+        height: 200px;
+        margin-right: 50px;
+    }
+
+    #work .wrapper .middle-circle {
+        padding-top: 50px;
+        height: 140px;
+    }
+
+    #work .wrapper #middle-circle-content {
+        top: 280px;
+        left: 260px;
+        width: 180px;
+    }
+
+    nav ul li:last-child {
+        display: none;
+    }
+
+    #plan .wrapper table tbody td {
+        background-position: 20px 20px;
+    }
+
+    #plan .wrapper table tbody tr:nth-child(3) td {
+        background-image: url("images/no.png");
+        background-repeat: no-repeat;
+        background-position: 20px 20px;
+    }
+
+    footer .wrapper div {
+        width: 200px;
+    }
+}
+
+@font-face {
+    font-family: 'OpenSans-ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/OpenSans-ExtraBold.ttf);
+    /*if IE */
+    src: local("Grandesign Regular"), url("fonts/OpenSans-ExtraBold.ttf") format("truetype");
+    /* non-IE */
+}
+
+@font-face {
+    font-family: "OpenSans-Semibold";
+    font-style: normal;
+    src: url(fonts/OpenSans-Semibold.ttf);
+    /*if IE */
+    src: local("Grandesign Regular"), url("fonts/OpenSans-Semibold.ttf") format("truetype");
+    /* non-IE */
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    font-style: normal;
+    src: url(fonts/OpenSans-Light.ttf);
+    /*if IE */
+    src: local("Grandesign Regular"), url("fonts/OpenSans-Light.ttf") format("truetype");
+    /* non-IE */
+}
+
+@font-face {
+    font-family: "OpenSans";
+    font-style: normal;
+    src: url(fonts/OpenSans-Regular.ttf);
+    /*if IE */
+    src: local("Grandesign Regular"), url("fonts/OpenSans-Regular.ttf") format("truetype");
+    /* non-IE */
+}
+
+@font-face {
+    font-family: "OpenSans-Italic";
+    font-style: normal;
+    src: url(fonts/OpenSans-Italic.ttf);
+    /*if IE */
+    src: local("Grandesign Regular"), url("fonts/OpenSans-Italic.ttf") format("truetype");
+    /* non-IE */
+}

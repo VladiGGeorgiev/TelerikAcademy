@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<catalogue>
+  <album>
+    <name>
+      Greatest Hits
+    </name>
+    <artist>
+      Deep Purple
+    </artist>
+    <year>
+      1990
+    </year>
+    <producer>
+      Sony Entertainment
+    </producer>
+    <price>
+      9.90
+    </price>
+    <songs>
+      <song>
+        <title>
+          Deep Purple Track 01
+        </title>
+        <duration> 
+          03:20
+        </duration>
+      </song>
+      <song>
+        <title>
+          Deep Purple Track 02
+        </title>
+        <duration>
+          02:30
+        </duration>
+      </song>
+      <song>
+        <title>
+          Deep Purple Track 03
+        </title>
+        <duration>
+          04:20
+        </duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>
+      Second Album name
+    </name>
+    <artist>
+      Metallica
+    </artist>
+    <year>
+      1994
+    </year>
+    <producer>
+      Sony Entertainment
+    </producer>
+    <price>
+      12.90
+    </price>
+    <songs>
+      <song>
+        <title>
+          Metallica Track 01
+        </title>
+        <duration>
+          03:25
+        </duration>
+      </song>
+      <song>
+        <title>
+          Metallica Track 02
+        </title>
+        <duration>
+          02:45
+        </duration>
+      </song>
+      <song>
+        <title>
+          Metallica Track 03
+        </title>
+        <duration>
+          04:34
+        </duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>
+      Third Album name
+    </name>
+    <artist>
+      Deep Purple
+    </artist>
+    <year>
+      1970
+    </year>
+    <producer>
+      Warner Bros Entertainment
+    </producer>
+    <price>
+      14.90
+    </price>
+    <songs>
+      <song>
+        <title>
+          DP Track 01
+        </title>
+        <duration>
+          03:55
+        </duration>
+      </song>
+      <song>
+        <title>
+          DP Track 02
+        </title>
+        <duration>
+          02:33
+        </duration>
+      </song>
+      <song>
+        <title>
+          DP Track 03
+        </title>
+        <duration>
+          04:29
+        </duration>
+      </song>
+    </songs>
+  </album>
+</catalogue>

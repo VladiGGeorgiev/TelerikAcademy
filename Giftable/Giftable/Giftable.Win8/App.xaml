@@ -1,0 +1,32 @@
+﻿<Application
+    x:Class="Giftable.Win8.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Giftable.Win8"
+    xmlns:localData="using:Giftable.Win8.Data"
+    xmlns:converters="clr-namespace:Giftable.WP8.Converters"
+    xmlns:common="using:Giftable.Win8.Common"
+    xmlns:viewModel="using:Giftable.Win8.ViewModel"
+    xmlns:helpers="using:Giftable.Win8.Helpers">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+                <!-- 
+                    Styles that define common aspects of the platform look and feel
+                    Required by Visual Studio project and item templates
+                 -->
+                <ResourceDictionary Source="Common/StandardStyles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- Application-specific resources -->
+
+            <common:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+            <helpers:IocSetup x:Key="IocSetup" />
+            <viewModel:ViewModelLocator x:Key="Locator" />
+            
+            <x:String x:Key="AppName">Giftable.Win8</x:String>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoubleEndedQueue", "DoubleEndedQueue\DoubleEndedQueue.csproj", "{6912D06D-E3AB-40D4-94D9-442C3EAEE15A}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "DequeDocumentation", "DequeDocumentation\DequeDocumentation.shfbproj", "{D1521F8C-FAF5-4CC3-9FE2-30392A1081E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6912D06D-E3AB-40D4-94D9-442C3EAEE15A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6912D06D-E3AB-40D4-94D9-442C3EAEE15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6912D06D-E3AB-40D4-94D9-442C3EAEE15A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6912D06D-E3AB-40D4-94D9-442C3EAEE15A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1521F8C-FAF5-4CC3-9FE2-30392A1081E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1521F8C-FAF5-4CC3-9FE2-30392A1081E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1521F8C-FAF5-4CC3-9FE2-30392A1081E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1521F8C-FAF5-4CC3-9FE2-30392A1081E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

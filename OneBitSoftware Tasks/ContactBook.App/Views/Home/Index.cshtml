@@ -1,0 +1,43 @@
+﻿@model IPagination<ContactBook.Data.Contact>
+@using MvcContrib.Pagination
+@using MvcContrib.UI.Grid
+@using MvcContrib.UI.Pager
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2><a href="/">ContactsBook</a></h2>
+<div>
+    @(Html.Grid(Model)
+    .Columns(column =>
+    {
+        column.For(contact => contact.FirstName);
+        column.For(contact => contact.LastName);
+        column.For(contact => contact.Sex);
+        column.For(contact => contact.Telephone);
+        column.For(contact => contact.Status);
+        column.For(contact => Ajax.ActionLink(
+            contact.Status == ContactBook.Data.Status.Active ? "Deactivate" : "Activate",
+            "ChangeStatus",
+            new { id = contact.ContactId },
+            new AjaxOptions() { HttpMethod = "GET" },
+            new { @class = "btn btn-sm btn-info", onclick = "return confirm('Are you sure you want to activate/deactivate " + contact.FirstName + "?')" })
+        ).Encode(false);
+        column.For(contact => Ajax.ActionLink("Delete",
+            "DeleteContact",
+            new { id = contact.ContactId },
+            new AjaxOptions() { HttpMethod = "GET" },
+            new { @class= "btn btn-sm btn-danger", onclick = "return confirm('Are you sure you want to delete " + contact.FirstName + "?')" })
+        ).Encode(false);
+    })
+    .Sort((GridSortOptions)ViewBag.Sort)
+    .Attributes(@class => "table table-hover table-bordered"))
+    <div id="pager">
+        @(@Html.Raw(Html.Pager(Model).Format("{0}-{1} of {2} ")
+        .First("First")
+        .Last("Last")
+        .Next("Next")
+        .Previous("Previous")
+        ))
+    </div>
+</div>

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimitiveTypesPerformance", "PrimitiveTypesPerformance\PrimitiveTypesPerformance.csproj", "{3B0A7642-09A5-4279-A373-F85B8DFD9B10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareRoot", "SquareRoot\SquareRoot.csproj", "{5E053A41-46BF-4F87-9633-6C794C63475B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortAlgorithmsPerformance", "SortAlgorithmsPerformance\SortAlgorithmsPerformance.csproj", "{4CD5AD91-DC39-4EC5-BF4C-051F1C63C88E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B0A7642-09A5-4279-A373-F85B8DFD9B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B0A7642-09A5-4279-A373-F85B8DFD9B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B0A7642-09A5-4279-A373-F85B8DFD9B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B0A7642-09A5-4279-A373-F85B8DFD9B10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E053A41-46BF-4F87-9633-6C794C63475B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E053A41-46BF-4F87-9633-6C794C63475B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E053A41-46BF-4F87-9633-6C794C63475B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E053A41-46BF-4F87-9633-6C794C63475B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CD5AD91-DC39-4EC5-BF4C-051F1C63C88E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CD5AD91-DC39-4EC5-BF4C-051F1C63C88E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CD5AD91-DC39-4EC5-BF4C-051F1C63C88E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CD5AD91-DC39-4EC5-BF4C-051F1C63C88E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

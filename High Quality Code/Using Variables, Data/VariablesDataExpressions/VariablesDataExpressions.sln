@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Figure", "Figure\1. Figure.csproj", "{F5F38C64-9C3B-4864-9439-2FAAC81450BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Statistics", "Statistics\2. Statistics.csproj", "{9169E4F6-45C0-4A4F-AAA5-799DBC943F94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5F38C64-9C3B-4864-9439-2FAAC81450BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F38C64-9C3B-4864-9439-2FAAC81450BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F38C64-9C3B-4864-9439-2FAAC81450BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F38C64-9C3B-4864-9439-2FAAC81450BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9169E4F6-45C0-4A4F-AAA5-799DBC943F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9169E4F6-45C0-4A4F-AAA5-799DBC943F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9169E4F6-45C0-4A4F-AAA5-799DBC943F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9169E4F6-45C0-4A4F-AAA5-799DBC943F94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

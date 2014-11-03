@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. RefactorExampleCode", "RefactorCode\1. RefactorExampleCode.csproj", "{E69F6FC4-EAEA-4D83-9FE7-43AFAF48E4A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. WellNamedIdentifiers", "WellNamedIdentifiers\2. WellNamedIdentifiers.csproj", "{8F418E51-72A1-42DE-B756-8B1308435092}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper", "Minesweeper\Minesweeper.csproj", "{7CBC34E9-BF14-4BD9-B897-EF911F7D1477}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E69F6FC4-EAEA-4D83-9FE7-43AFAF48E4A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69F6FC4-EAEA-4D83-9FE7-43AFAF48E4A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69F6FC4-EAEA-4D83-9FE7-43AFAF48E4A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69F6FC4-EAEA-4D83-9FE7-43AFAF48E4A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F418E51-72A1-42DE-B756-8B1308435092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F418E51-72A1-42DE-B756-8B1308435092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F418E51-72A1-42DE-B756-8B1308435092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F418E51-72A1-42DE-B756-8B1308435092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CBC34E9-BF14-4BD9-B897-EF911F7D1477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CBC34E9-BF14-4BD9-B897-EF911F7D1477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CBC34E9-BF14-4BD9-B897-EF911F7D1477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CBC34E9-BF14-4BD9-B897-EF911F7D1477}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

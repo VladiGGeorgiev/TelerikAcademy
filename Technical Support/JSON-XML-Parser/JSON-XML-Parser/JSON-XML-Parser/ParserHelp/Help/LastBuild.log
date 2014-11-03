@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder" version="1.9.7.0" projectFile="C:\Users\vggeo_000\Desktop\JSON-XML-Parser\JSON-XML-Parser\JSON-XML-Parser\ParserHelp\Parser.shfbproj" started="08/12/13 11:26:36">
+<buildStep step="Initializing">
+    Last step completed in 00:00:00.0030
+</buildStep>
+<buildStep step="Failed">
+
+SHFB: Error BE0034: The &#39;OutputPath&#39; property resolved to &#39;C:\Users\vggeo_000\Desktop\JSON-XML-Parser\JSON-XML-Parser\JSON-XML-Parser\ParserHelp\Help\&#39; which is a reserved folder name.  See error or property topic in help file for details.
+
+</buildStep>
+</shfbBuild>

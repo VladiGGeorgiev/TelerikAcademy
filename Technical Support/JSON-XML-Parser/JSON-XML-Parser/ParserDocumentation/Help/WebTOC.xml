@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="d44641e1-a3db-41d2-8dff-09d467ec003e" Title="JSON_XML_Parser Namespace" Url="html/594a4791-aca8-505e-c352-83c99ac7d738.htm">
+    <HelpTOCNode Id="0cf2504f-799b-4bf0-b59c-fb8d6eb1063c" Title="Parser Class" Url="html/227b9225-e366-ee87-4d99-3a2c1f983604.htm">
+      <HelpTOCNode Title="Parser Members" Url="html/294a1259-3c02-aedb-3105-5e7b758c6521.htm" />
+      <HelpTOCNode Title="Parser Constructor " Url="html/4e6c5ed8-6a7d-a5b2-059f-6a33a687c042.htm" />
+      <HelpTOCNode Id="3f7e0e7d-9c42-4f3e-abb9-a3e2223f6b64" Title="Parser Methods" Url="html/2cb6a4fa-42a4-a14f-ae9b-5d0c586b031b.htm">
+        <HelpTOCNode Title="JSONToXML Method " Url="html/d77cf065-1468-f4bb-117a-5b38a2ccc77f.htm" />
+        <HelpTOCNode Title="XMLToJSON Method " Url="html/30f2fb95-349d-3f5b-e971-f08e6217009a.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

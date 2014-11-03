@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON-XML-Parser", "JSON-XML-Parser\JSON-XML-Parser.csproj", "{E13A29A5-3485-41D7-BF74-EF29631E8AC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSON-XML-Parser-DEMO", "JSON-XML-Parser-DEMO\JSON-XML-Parser-DEMO.csproj", "{48F89F40-7694-4F2F-A804-342415CE7BA4}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "ParserDocumentation", "ParserDocumentation\ParserDocumentation.shfbproj", "{E212C603-54CA-49DF-97BE-9E067B1391CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E13A29A5-3485-41D7-BF74-EF29631E8AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E13A29A5-3485-41D7-BF74-EF29631E8AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E13A29A5-3485-41D7-BF74-EF29631E8AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E13A29A5-3485-41D7-BF74-EF29631E8AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48F89F40-7694-4F2F-A804-342415CE7BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F89F40-7694-4F2F-A804-342415CE7BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48F89F40-7694-4F2F-A804-342415CE7BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48F89F40-7694-4F2F-A804-342415CE7BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E212C603-54CA-49DF-97BE-9E067B1391CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E212C603-54CA-49DF-97BE-9E067B1391CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E212C603-54CA-49DF-97BE-9E067B1391CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E212C603-54CA-49DF-97BE-9E067B1391CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

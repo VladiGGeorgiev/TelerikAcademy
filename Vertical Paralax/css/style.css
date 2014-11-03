@@ -1,0 +1,100 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+html,body{
+	height:100%;
+	max-height:100%;
+}
+*{
+	margin:0;
+	padding:0;
+	background:url(../img/background_1.png);
+	font-family:'Lobster', arial, serif;
+}
+
+a.themshock_banner{
+	width:210px;
+	height:210px;
+
+	position:fixed;
+	right:0;
+	
+}
+div{
+	background:transparent;
+
+}
+img{
+	background:transparent;
+}
+/* aqui define el contenedor princicpal*/
+.header{
+	position:relative;
+	background:url(../img/header_textures.png) repeat-x;
+	width:100%;
+	height:125px;
+	overflow:hidden;
+	z-index:4;
+}
+.header img{
+	text-align:center;
+	
+}
+.bk_blank{
+	width:100%;
+	height:478px;
+	background:transparent;
+	overflow:hidden;
+	text-align:center;
+
+	z-index:2;
+	
+}
+.img_1{
+	
+	height:1600px;
+	width:100%;
+	background: transparent url(../img/img_1.png) no-repeat  fixed 50% 400px;
+}
+.img_2{
+	height:1600px;
+	width:100%;
+	background:transparent url(../img/img_2.png) no-repeat fixed 50% 400px; 
+}
+.bk{	
+	width:100%;
+	height:1600px;
+
+	
+}
+.title_1{
+	background:url(../img/title_a.jpg) 0 0 no-repeat  ;		
+}
+.title_2{
+	background:url(../img/title_b.jpg) 0 0 no-repeat  ;		
+}
+
+.bk_0{
+	background:url(../img/bk_1.jpg) 0 0 no-repeat fixed ;	
+}
+.bk_1{
+	background:url(../img/bk_2.jpg) 0 0  no-repeat fixed ;	
+}
+
+
+.footer{
+	position:relative;
+
+	background:url(../img/footer_textures.png) repeat-x;
+	width:100%;
+	height:155px;
+	z-index:3;
+
+}
+.footer div{
+	position:relative;
+	width:1008px;
+	margin:0 auto;
+	z-index:3;
+	
+}
+
+/* picture  define la magen de la camra */

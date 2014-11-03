@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Input types</title>
+    <script src="scripts/jquery-1.9.1.min.js"></script>
+    <script src="scripts/webshims-stable/js-webshim/minified/polyfiller.js"></script>
+    <script>
+        $.webshims.setOptions('forms', {
+            customDatalist: true
+        });
+        //implement custom [type="date"]/[type="range"] widgets in all browsers
+        $.webshims.setOptions('forms-ext', {
+            replaceUI: true
+        });
+    </script>
+</head>
+<body>
+    <label for="range">range</label>
+    <input id="range" type="range" name="name" value=" " /> <br />
+
+    <label for="number">number</label>
+    <input type="number" name="name" value=" " /><br />
+
+    <label for="email">email</label>
+    <input type="email" name="name" value=" " /><br />
+
+    <label for="date">date</label>
+    <input type="date" name="name" value=" " /><br />
+
+    <label for="color">color</label>
+    <input type="color" name="name" value=" " /><br />
+
+    <label for="datetime">datetime</label>
+    <input type="datetime" name="name" value=" " /><br />
+
+    <label for="month">month</label>
+    <input type="month" name="name" value=" " /><br />
+
+    <label for="search">search</label>
+    <input type="search" name="name" value=" " /><br />
+
+    <label for="tel">tel</label>
+    <input type="tel" name="name" value=" " />  <br />
+          
+    <label for="time">time</label>
+    <input type="time" name="name" value=" " /> <br />
+          
+    <label for="url">url</label>
+    <input type="url" name="name" value=" " /><br />  
+        
+    <label for="week">week</label>
+    <input type="week" name="name" value=" " /><br />
+</body>
+</html>

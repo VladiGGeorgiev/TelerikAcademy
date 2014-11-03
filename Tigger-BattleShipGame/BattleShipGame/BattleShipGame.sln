@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleShip", "BattleShip\BattleShip.csproj", "{171A3008-7090-4AD8-8B4F-9650CA4CE9E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleShipTests", "BattleShipTests\BattleShipTests.csproj", "{AF3AB71D-DFA9-446F-9DC1-E3E8BB87A8BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleShip.Common", "BattleShip.Common\BattleShip.Common.csproj", "{F4E64AFE-B57B-4AFA-83D8-F2EC22C72F88}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://csharp-exercises.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BattleShip\\BattleShip.csproj
+		SccProjectName1 = BattleShip
+		SccLocalPath1 = BattleShip
+		SccProjectUniqueName2 = BattleShipTests\\BattleShipTests.csproj
+		SccProjectName2 = BattleShipTests
+		SccLocalPath2 = BattleShipTests
+		SccProjectUniqueName3 = BattleShip.Common\\BattleShip.Common.csproj
+		SccProjectName3 = BattleShip.Common
+		SccLocalPath3 = BattleShip.Common
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{171A3008-7090-4AD8-8B4F-9650CA4CE9E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{171A3008-7090-4AD8-8B4F-9650CA4CE9E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{171A3008-7090-4AD8-8B4F-9650CA4CE9E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{171A3008-7090-4AD8-8B4F-9650CA4CE9E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF3AB71D-DFA9-446F-9DC1-E3E8BB87A8BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF3AB71D-DFA9-446F-9DC1-E3E8BB87A8BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF3AB71D-DFA9-446F-9DC1-E3E8BB87A8BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF3AB71D-DFA9-446F-9DC1-E3E8BB87A8BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4E64AFE-B57B-4AFA-83D8-F2EC22C72F88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E64AFE-B57B-4AFA-83D8-F2EC22C72F88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E64AFE-B57B-4AFA-83D8-F2EC22C72F88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E64AFE-B57B-4AFA-83D8-F2EC22C72F88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

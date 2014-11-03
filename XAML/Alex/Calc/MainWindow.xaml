@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfBasicCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WPF Basic Calculator" Height="204" Width="195" xmlns:ribbon="http://schemas.actiprosoftware.com/winfx/xaml/ribbon" ResizeMode="NoResize" Background="#FFE8D9D9">
+    
+    <Grid Margin="0,0,0,0">
+        <StackPanel Margin="10,0,12,12">
+
+            <TextBox   Margin="-15,0,0,0" Height="22" Name="textBoxDummy" Width="150" TextAlignment="Right" Visibility="Hidden"/>
+            <TextBox   Margin="-15,0,0,0" Height="22" Name="textBoxStack" Width="150" TextAlignment="Right" IsEnabled="False" />
+            <TextBox   Margin="-15,0,0,0" Height="22" Name="textBox1" Width="150" TextAlignment="Right" />
+
+            <TabPanel>
+                <Button BorderThickness="1" Content="7" Name="button7" Margin="0,0,0,0" Width="30" Height="25" Click="button7_Click" />
+                <Button BorderThickness="1" Content="8" Name="button8" Margin="0,0,0,0"  Width="30" Height="25" Click="button8_Click" />
+                <Button BorderThickness="1" Content="9" Name="button9" Margin="0,0,0,0" Width="30" Height="25" Click="button9_Click" />
+                <Button BorderThickness="1" Content="/" Name="buttonsl" Margin="0,0,0,0"  Width="30" Height="25" Click="buttonsl_Click" />
+                <Button BorderThickness="1" Content="OFF" Name="buttonoff" Margin="0,0,0,0" Width="30" Height="25"/>
+            </TabPanel>
+            <TabPanel>    
+    
+        <Button Content="4" Name="button4" Margin="0,0,0,0" Width="30" Height="25" Click="button4_Click" />
+        <Button Content="5" Name="button5" Margin="0,0,0,0"  Width="30" Height="25" Click="button5_Click" />
+        <Button Content="6" Name="button6" Margin="0,0,0,0" Width="30" Height="25" Click="button6_Click" />
+        <Button Content="*" Name="buttonmul" Margin="0,0,0,0"  Width="30" Height="25" Click="buttonmul_Click" />
+        <Button Content="C" Name="buttonclear" Margin="0,0,0,0" Width="30" Height="25"/>
+
+
+            </TabPanel>
+            <TabPanel>
+                <Button Content="1" Name="button1" Margin="0,0,0,0" Width="30" Height="25" Click="button1_Click" />
+        <Button Content="2" Name="button2" Margin="0,0,0,0"  Width="30" Height="25" Click="button2_Click" />
+        <Button Content="3" Name="button3" Margin="0,0,0,0" Width="30" Height="25" Click="button3_Click" />
+        <Button Content="-" Name="buttonsub" Margin="0,0,0,0"  Width="30" Height="25" Click="buttonsub_Click" />
+        <Button Content="S&amp;F" Name="buttonper" Margin="0,0,0,0" Width="30" Height="25" Click="buttonper_Click" />
+
+
+            </TabPanel>
+            <TabPanel>
+                <Button Content="0" Name="button0" Margin="0,0,0,0" Width="30" Height="25" Click="button0_Click" />
+        <Button Content="+/-" Name="buttonComp" Margin="0,0,0,0"  Width="30" Height="25" Click="buttonComp_Click" />
+        <Button Content="." Name="buttonDot" Margin="0,0,0,0" Width="30" Height="25" Click="buttonDot_Click" />
+        <Button Content="+" Name="buttonAdd" Margin="0,0,0,0"  Width="30" Height="25" Click="buttonAdd_Click" />
+        <Button Content="=" Name="buttonEQ" Margin="0,0,0,0" Width="30" Height="25" Click="buttonEQ_Click" />
+    </TabPanel>
+</StackPanel>
+
+
+
+    </Grid>
+</Window>

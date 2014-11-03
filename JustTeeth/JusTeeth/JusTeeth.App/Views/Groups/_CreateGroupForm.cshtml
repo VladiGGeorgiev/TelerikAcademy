@@ -1,0 +1,200 @@
+﻿@model JusTeeth.App.ViewModels.CreateGroupViewModel
+@Scripts.Render("~/bundles/jqueryval") @*<- By Fert1 GOOD job !*@
+
+
+@using (Html.BeginForm("Index", "Groups", FormMethod.Post))
+{
+    @*@Html.ValidationSummary(false)*@
+
+    <div class="row-fluid">
+        <span id="step1">Step 1</span> -> <span id="step2">Step 2</span> -> <span id="step3">Step 3</span>
+    </div>
+
+    <fieldset class="form-horizontal">
+        <legend>Create Group</legend>
+
+        <div class="row-fluid" id="firstStepContainer">
+            <div id="createGroupMapcontainer">
+
+            </div>
+        </div>
+
+        <div class="row-fluid" id="secondStepContainer">
+
+            <div class="control-group">
+                @Html.LabelFor(model => model.PlacePlaceholder, new { @class = "control-label" })
+                <div class="controls">
+                    @*@Html.EditorFor(model => model.Place, new { @id = "placePlaceholder"})*@
+                    @*<input type="text" id="placePlaceholder" />*@
+                    <input id="PlacePlaceholder" name="PlacePlaceholder" type="text" readonly="readonly"/>
+                    @*@Html.ValidationMessageFor(model => model.Place, null, new { @class = "help-inline" })*@
+                </div>
+
+                @*@(Html.Kendo()
+                    .AutoComplete()
+                    .Name("place")
+                    .Filter("contains")
+                    .DataTextField("Name")
+                    .MinLength(3)
+                    .DataSource(data =>
+                    {
+                        data.Read(read =>
+                        {
+                            read.Action("GetAutocompleteData", "Groups").Data("onAdditionalData");
+                        })
+                            .ServerFiltering(true);
+                    }))*@
+            </div>
+
+            <div class="control-group">
+                @Html.LabelFor(model => model.StartingTime, new { @class = "control-label" })
+                <div class="controls">
+                    @*@Html.EditorFor(model => model.StartingTime)*@
+                    @(Html.Kendo().DateTimePicker()
+                    .Name("StartingTime")
+                    .Value(DateTime.Now)
+                    .Min(DateTime.Now)
+                    .Max(DateTime.Now.AddDays(4)))
+                    @*@Html.ValidationMessageFor(model => model.StartingTime, null, new { @class = "help-inline" })*@
+                </div>
+            </div>
+
+            @*<div class="form-actions no-color">
+                    <input type="submit" value="Create" class="btn" />
+                </div>*@
+        </div>
+
+        <div class="row-fluid" id="thirdStepContainer">
+            <input type="submit" value="Create" class="btn" id="createGroupButton" />
+        </div>
+
+        <div>
+            <a onclick="goToPreviosStep()" class="btn">Back</a>
+            <a onclick="goToNextStep()" class="btn">Next</a>
+        </div>
+    </fieldset>
+}
+
+<script>
+    var page = 0;
+
+    function onAdditionalData() {
+        return {
+            text: $("#place").val()
+        };
+    }
+
+    function handlePage() {
+        if (page == 0) {
+            $("#firstStepContainer").css("display", "block");
+            $("#secondStepContainer").css("display", "none");
+            $("#thirdStepContainer").css("display", "none");
+            $("#step1").css("font-weight", "bold");
+            $("#step2").css("font-weight", "normal");
+            $("#step3").css("font-weight", "normal");
+        } else if (page == 1) {
+            $("#firstStepContainer").css("display", "none");
+            $("#secondStepContainer").css("display", "block");
+            $("#thirdStepContainer").css("display", "none");
+            $("#step1").css("font-weight", "normal");
+            $("#step2").css("font-weight", "bold");
+            $("#step3").css("font-weight", "normal");
+        } else {
+            $("#firstStepContainer").css("display", "none");
+            $("#secondStepContainer").css("display", "none");
+            $("#thirdStepContainer").css("display", "block");
+            $("#step1").css("font-weight", "normal");
+            $("#step2").css("font-weight", "normal");
+            $("#step3").css("font-weight", "bold");
+
+        }
+    }
+
+    function goToNextStep() {
+        //$("#firstStepContainer").css("display", "none");
+        //$("#createGroupContainer").css("display", "block");
+        if (page < 2) {
+            page++;
+            handlePage();
+        }
+
+    }
+
+    function goToPreviosStep() {
+        //$("#firstStepContainer").css("display", "block");
+        //$("#createGroupContainer").css("display", "none");
+        if (page > 0) {
+            page--;
+            handlePage();
+        }
+    }
+
+    function createMarker(map, position, title) {
+        var marker = new google.maps.Marker({
+            position: position,
+            map: map,
+            title: title
+        });
+        google.maps.event.addListener(marker, "click", function () {
+            showInfoWindow(marker);
+        });
+    }
+
+    function initialize() {
+        var placeName = '@(Model.PlacePlaceholder)';
+        //TODO: get user coordinates
+        @*var latitude = '@(Model.Latitude)';
+        var longitude = '@(Model.Longitude)';*@
+
+        var latitude = "42.650964";
+        var longitude = "23.379358";
+        var latlng = new google.maps.LatLng(latitude, longitude);
+        var options = {
+            zoom: 4, center: latlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById
+            ("createGroupMapcontainer"), options);
+
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: placeName
+        });
+
+        $.ajax({
+            url: "/places/getpushpins",
+            type: "GET",
+            dataType: "json",
+        }).then(function (data) {
+            console.log(data);
+            for (var i = 0; i < data.length; i++) {
+                var currentPosition = new google.maps.LatLng(data[i].Latitude, data[i].Longitude);
+                var title = data[i].Name;
+                createMarker(map, currentPosition, title);
+            }
+
+        }, function (err) {
+            console.log(err);
+        });
+    }
+    
+    function showInfoWindow(pushPin) {
+        //alert(pushPin.title);
+        console.log(pushPin.title);
+        document.getElementById("PlacePlaceholder").value = pushPin.title;
+        page++;
+        handlePage();
+    }
+
+    $(function () {
+        // map initializer
+        var containerPanelWidth = $("#firstStepContainer").width();
+        ////var panelHeight = $("#left-panel").height();
+        //$("#createGroupMapcontainer").width("width", "" + containerPanelWidth + "px");
+        //$("#map_canvas").css("height", "500px");
+
+        initialize();
+        handlePage();
+    });
+</script>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="JSONToXML method" Url="html/d77cf065-1468-f4bb-117a-5b38a2ccc77f.htm" />
+  <HelpKINode Title="JSON_XML_Parser namespace" Url="html/594a4791-aca8-505e-c352-83c99ac7d738.htm" />
+  <HelpKINode Title="JSON_XML_Parser.Parser class">
+    <HelpKINode Title="Parser Class" Url="html/227b9225-e366-ee87-4d99-3a2c1f983604.htm" />
+    <HelpKINode Title="Parser Members" Url="html/294a1259-3c02-aedb-3105-5e7b758c6521.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Parser class">
+    <HelpKINode Title="Parser Class" Url="html/227b9225-e366-ee87-4d99-3a2c1f983604.htm" />
+    <HelpKINode Title="Parser Members" Url="html/294a1259-3c02-aedb-3105-5e7b758c6521.htm" />
+    <HelpKINode Title="about Parser class" Url="html/227b9225-e366-ee87-4d99-3a2c1f983604.htm" />
+    <HelpKINode Title="all members" Url="html/294a1259-3c02-aedb-3105-5e7b758c6521.htm" />
+    <HelpKINode Title="constructor" Url="html/4e6c5ed8-6a7d-a5b2-059f-6a33a687c042.htm" />
+    <HelpKINode Title="methods" Url="html/2cb6a4fa-42a4-a14f-ae9b-5d0c586b031b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Parser.JSONToXML method" Url="html/d77cf065-1468-f4bb-117a-5b38a2ccc77f.htm" />
+  <HelpKINode Title="Parser.Parser constructor" Url="html/4e6c5ed8-6a7d-a5b2-059f-6a33a687c042.htm" />
+  <HelpKINode Title="Parser.XMLToJSON method" Url="html/30f2fb95-349d-3f5b-e971-f08e6217009a.htm" />
+  <HelpKINode Title="XMLToJSON method" Url="html/30f2fb95-349d-3f5b-e971-f08e6217009a.htm" />
+</HelpKI>
